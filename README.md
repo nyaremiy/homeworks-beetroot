@@ -1,2 +1,2 @@
 # homeworks-beetroot
-https://github.com/nyaremiy/homeworks-beetroot.git
+https://nyaremiy.github.io/homeworks-beetroot/
