@@ -10,7 +10,10 @@ body{
     font-size: 54px;
     text-align: center;
 		margin: 0.4em ;
-		color: rgb(71, 71, 71);
+}
+.homepage>a {
+	text-decoration: none;
+	color: rgb(71, 71, 71);
 }
 .myname, p{
 	margin-left: 20px;
