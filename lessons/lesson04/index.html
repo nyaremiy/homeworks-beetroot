@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Семантика Html5</title>
   </head>
+  <!-- Задав ширину сайту і розмістив по середині екрану для кращого вигляду -->
   <body style="width: 800px; margin: 0 auto">
     <header>
       <h1>Семантика, посилання і HTML5 теги</h1>
       <nav>
+        <!-- Посилання на інші сторінки  -->
         <ul>
           <li><a href="./../../index.html">ДОМАШНЯ СТОРІНКА</a></li>
           <li><a href="./../lesson02/index02.html">УРОК 2</a></li>
           <li><a href="./../lesson03/index03.html">УРОК 3</a></li>
           <li>
+            <!-- GitHub командний репозиторій -->
             <a
             target="_blank"
             href="https://github.com/stepanets-vadym/project.git"
@@ -23,7 +26,7 @@
         </ul>
       </nav>
     </header>
-
+<!-- Посилання по змісу сторінки -->
     <nav>
       <p><strong>Зміст сторінки:</strong></p>
       <ul></ul>
@@ -35,7 +38,7 @@
       <li><a href="#6">HTML5 &ltheader&gt елемент</a></li>
       <li><a href="#7">HTML5 &ltfooter&gt елемент</a></li>
     </nav>
-
+<!-- Головий контент стрінки -->
     <main>
       <section>
         <h2 id="1">HTML5 Семантичні елементи</h2>
@@ -99,18 +102,18 @@
           <p>Елемент &ltsection&gt визначає розділ в документі</p>
           <p>
             Згідно з документацією в3к'с HTML5: "розділ представляє собою
-            тематичну угруповання контенту, зазвичай з заголовком"
+            тематичну угруповання контенту, зазвичай з заголовком".
           </p>
           <p>
             Домашня сторінка зазвичай може бути розділена на розділи для
-            ознайомлення, змісту і контактної інформаці
+            ознайомлення, змісту і контактної інформації.
           </p>
           <img src="./images/img1.png" alt="Приклад тегу SECTION" />
         </section>
 
         <section id="5">
           <h3>HTML5 &ltarticle&gt елемент</h3>
-          <p>Елемент &ltarticle&gt визначає незалежний, автономний вмі</p>
+          <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
           <p>
             Стаття повинна мати сенс самостійно, і вона повинна мати можливість
             читати його незалежно від іншої частини веб-сайту.
@@ -154,14 +157,17 @@
         </section>
       </section>
     </main>
+    <!-- iframe з резюме -->
     <div >
       <h4>Резюме:<h4>
       <iframe src="./../lesson02/en/index.html" frameborder="5" style="width: 800px; height: 500px;"></iframe>
     </div>
+    <!-- iframe з youtube -->
     <div>
       <h4>Вставка відео з Ютуб:</h4>
       <iframe width="800" height="523" src="https://www.youtube.com/embed/FII4DRuiLLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <!-- футер -->
     <footer style="text-align: center;"><p>2022</p></footer>
   </body>
 </html>
