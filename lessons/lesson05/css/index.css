@@ -16,13 +16,13 @@ h2 {
   font-weight: bold;
   font-size: 34px;
   line-height: 46px;
-  color: #070707;
 }
 body {
   color: #070707;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
 }
+/* Стилі до ершого розділу */
 .section_1 {
   width: 1445px;
   margin: 0 auto;
@@ -73,6 +73,7 @@ body {
 .image {
   padding-bottom: 100px;
 }
+/* Стилі до розділу "About me" */
 .section_about_me {
   text-align: center;
   background-color: #f6f6f6;
@@ -94,7 +95,7 @@ body {
 .second_p {
   padding: 65px 0;
 }
-
+/* Стилі до розділу зі скілами */
 .skills {
   width: auto;
   height: 580px;
@@ -123,7 +124,7 @@ body {
   text-align: center;
   padding: 24px 0 60px 0;
   color: #828282;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
 }
 .skills_sections {
   width: 170px;
@@ -139,12 +140,11 @@ body {
 .skills_ul_stars {
   text-align: center;
 }
+/* Відцентрував останній елемент */
 .figma_span {
   margin: 7px 0 10px;
 }
-
-
-
+/* Стилі до розділу з проектами в портфоліо */
 .section_portfolio {
   width: 100%;
   height: 2240px;
@@ -152,22 +152,23 @@ body {
 }
 .section_portfolio h2 {
   padding: 120px 0 67px 0;
- text-align: center;
+  text-align: center;
 }
 .section_portfolio section > a {
   color: #070707;
   display: block;
   text-decoration: none;
-padding: 15px 0 100px 0;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
-text-decoration-line: underline;
+  padding: 15px 0 100px 0;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration-line: underline;
 }
 .section_portfolio section > img {
   display: block;
   margin: 0 auto;
 }
+/* Стилі до футера */
 .footer h2 {
   padding: 100px 0 21px 0;
   text-align: center;
@@ -176,22 +177,23 @@ text-decoration-line: underline;
   text-align: center;
   padding-bottom: 78px;
 }
+/* Стиль до кнопки */
 .btn {
   background-color: #070707;
   width: 180px;
   height: 42px;
   color: #fff;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
-letter-spacing: 0.1em;
-border-radius: 50px;
-display: block;
-margin: 0 auto;
-border-style: none;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  border-style: none;
 }
 .social_links {
-  padding: 30px 0 44px 0 ;
+  padding: 30px 0 44px 0;
   text-align: center;
 }
 .social_links a {
@@ -200,7 +202,5 @@ border-style: none;
 .footer_p_last {
   color: #828282;
   font-size: 14px;
-line-height: 19px;
+  line-height: 19px;
 }
-
-
