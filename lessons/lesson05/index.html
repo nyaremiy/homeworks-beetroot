@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,31 +11,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
   </head>
   <body>
+    <!-- Перша розділ сайту -->
     <div class="section_1">
       <header class="header">
         <nav class="header_list">
+          <!-- Посилання на розділи по сторінці -->
           <ul class="header_list_ul">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="./../../index.html">Home</a></li>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
-        <div class="vector"></div>
+        <div class="vector">
+          <!-- Лінія з тінню під посиланями -->
+        </div>
       </header>
       <h1 class="Denis_name">Denis Novik</h1>
       <div class="image">
         <img src="./images/DenisPhoto.jpg" alt="Denis Novik" />
       </div>
     </div>
-
-    <div class="section_about_me">
+    <!-- Другий розділ сайту.
+    Декілька параграфів з іформацією про "Denis Novik" -->
+    <div class="section_about_me" id="about_me">
       <h2 class="about_h2">About me</h2>
       <div class="about_content_p">
         <p>
@@ -53,86 +57,118 @@
       </div>
     </div>
 
-
-    <div class="skills">
-        <h2 class="skills_h2">Skills</h2>
-        <p class="skills_p">I work in such programs as</p>
-        <section class="skills_section">
-          <section class="skills_sections">
-            <img src="./images/Photoshop-Ico.png" alt="">
-            <span class="skills_span">Adobe <br> Photoshop</span>
-            <ul class="skills_ul_stars">
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src=".//images/Star2.png" alt=""></li>
-            </ul>
-          </section>
-          <section class="skills_sections">
-            <img src="./images/Illustartor-Ico.png" alt="">
-            <span class="skills_span">Adobe <br> Illustrator</span>
-            <ul class="skills_ul_stars">
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star2.png" alt=""></li>
-              <li><img src=".//images/Star2.png" alt=""></li>
-            </ul>
-          </section>
-          <section class="skills_sections">
-            <img src="./images/After-effects-Ico.png" alt="">
-            <span class="skills_span">Adobe <br> After Effects</span>
-            <ul class="skills_ul_stars">
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src=".//images/Star2.png" alt=""></li>
-            </ul>
-          </section>
-          <section class="skills_sections">
-            <img src="./images/Figma-Ico.png" alt="">
-            <span class="skills_span figma_span">Figma</span>
-            <ul class="skills_ul_stars">
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src="./images/Star.png" alt=""></li>
-              <li><img src=".//images/Star2.png" alt=""></li>
-            </ul>
-          </section>
+    <!-- Третій розділ сайту.
+Містить інформацію про вміння користуватись програмами для роботи -->
+    <div class="skills" id="skills">
+      <h2 class="skills_h2">Skills</h2>
+      <p class="skills_p">I work in such programs as</p>
+      <section class="skills_section">
+        <!-- Секція з інформацією про Adobe Photoshop -->
+        <section class="skills_sections">
+          <img src="./images/Photoshop-Ico.png" alt="photoshop" />
+          <span class="skills_span"
+            >Adobe <br />
+            Photoshop</span>
+          <ul class="skills_ul_stars">
+            <!-- Іконки зірочок -->
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
+          </ul>
         </section>
+        <!-- Секція з інформацією про Adobe Illustrator -->
+        <section class="skills_sections">
+          <img src="./images/Illustartor-Ico.png" alt="illustrator" />
+          <span class="skills_span"
+            >Adobe <br />
+            Illustrator</span>
+          <ul class="skills_ul_stars">
+            <!-- Іконки зірочок -->
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star2.png" alt="зірочка" /></li>
+            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
+          </ul>
+        </section>
+        <!-- Секція з інформацією про Adobe After Effects -->
+        <section class="skills_sections">
+          <img src="./images/After-effects-Ico.png" alt="after-effects" />
+          <span class="skills_span"
+            >Adobe <br />
+            After Effects</span>
+          <ul class="skills_ul_stars">
+            <!-- Іконки зірочок -->
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
+          </ul>
+        </section>
+        <!-- Секція з інформацією про Figma -->
+        <section class="skills_sections">
+          <img src="./images/Figma-Ico.png" alt="figma" />
+          <span class="skills_span figma_span">Figma</span>
+          <!-- Іконки зірочок -->
+          <ul class="skills_ul_stars">
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src="./images/Star.png" alt="зірочка" /></li>
+            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
+          </ul>
+        </section>
+      </section>
     </div>
 
-
-    <div class="section_portfolio">
+    <!-- Четвертий розділ -->
+    <!-- Містить декілька проектів "Denis Novik" -->
+    <div class="section_portfolio" id="portfolio">
       <h2>Portfolio</h2>
+      <!-- Перша секція з картинкою роботи -->
       <section>
-        <img src="./images/img_one.png" alt="portfolio">
+        <img src="./images/img_one.png" alt="portfolio" />
+        <!-- Посилання на проект -->
         <a href="#">Online fashion store - Homepage</a>
       </section>
+      <!-- Друга секція з картинкою роботи -->
       <section>
-        <img src="./images/img_two.png" alt="portfolio">
+        <img src="./images/img_two.png" alt="portfolio" />
+        <!-- Посилання на проект -->
         <a href="#">Reebok Store - Concept</a>
       </section>
+      <!-- Третя секція з картинкою роботи -->
       <section>
-      <img src="./images/img_three.png" alt="portfolio">
+        <img src="./images/img_three.png" alt="portfolio" />
+        <!-- Посилання на проект -->
         <a href="#">Braun Landing Page - Concept</a>
       </section>
     </div>
 
-    <footer class="footer">
+    <!-- П'ятий розділ сайту -->
+    <footer class="footer" id="contacts">
       <h2>Contacts</h2>
-      <p>Want to know more or just chat? <br> You are welcome!</p>
+      <p>
+        Want to know more or just chat? <br />
+        You are welcome!
+      </p>
+      <!-- Кнопка -->
       <button type="button" class="btn"><span>Send message</span></button>
-        <nav class="social_links">
-          <a href="#"><img src="./images/icon01.png" alt=""></a>
-          <a href="#"><img src="./images/icon02.png" alt=""></a>
-          <a href="#"><img src="./images/icon03.png" alt=""></a>
-          <a href="#"><img src="./images/icon04.png" alt=""></a>
-        </nav>
-      <p class="footer_p_last">Like me on<br> LinkedIn, Instagram, Behance,<br> Dribble</p>
+      <!-- Посилання на соціальні мережі -->
+      <nav class="social_links">
+        <a href="#"><img src="./images/icon01.png" alt="соціальна мережа" /></a>
+        <a href="#"><img src="./images/icon02.png" alt="соціальна мережа" /></a>
+        <a href="#"><img src="./images/icon03.png" alt="соціальна мережа" /></a>
+        <a href="#"><img src="./images/icon04.png" alt="соціальна мережа" /></a>
+      </nav>
+      <p class="footer_p_last">
+        Like me on<br />
+        LinkedIn, Instagram, Behance,<br />
+        Dribble
+      </p>
     </footer>
   </body>
 </html>
