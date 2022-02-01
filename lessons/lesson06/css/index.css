@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.1s ease-in;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -9,12 +10,9 @@ body {
 .header {
   text-align: center;
   background: #4a4f56;
-  color: #FF8984;
-  position: absolute;
+  color: #ff8984;
   width: 100%;
   height: 82px;
-  left: 0px;
-  top: 0px;
 }
 .header-title {
   margin: 0;
@@ -30,7 +28,115 @@ body {
   padding-top: 20px;
 }
 .section-form {
-  background-color: #3B3F45;
+  background-color: #3b3f45;
   width: 100%;
-  height: 510px;
+  height: 425px;
+}
+.form-block {
+  display: table;
+  margin: 0 auto;
+}
+.wrapper-labels {
+  border: 1px solid red;
+  width: 535px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.wrapper-checkbox {
+  width: 100%;
+  height: 270px;
+  margin: 20px 0 45px 0;
+}
+.checkbox-item {
+  width: 535px;
+  height: 45px;
+  display: block;
+  background-color: #88839e;
+}
+/* Кожен другий елемент іншого кольору */
+.checkbox-item:nth-child(even) {
+  background-color: #7a7593;
+}
+/* Відцентрував */
+label {
+  display: block;
+  padding: 12px 0 0 33px;
+}
+/* Видалив стандартий значок type="checkbox" 
+Зайшов такий спосіб в інтернеті, але не до кінця розібрався як він працює.*/
+.check-box {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding-left: 20px;
+}
+/* Створив білий квадратик для Checkbox */
+.check-style {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  margin-left: -20px;
+}
+/* Додав галочку до Checkbox */
+.check-box:checked + .check-style::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./../images/check.png) no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+/* Стилізую текст */
+.input-text {
+  padding-left: 16px;
+  color: #fff;
+  font-size: 18px;
+}
+.item-first::after {
+  content: "(for the next lessons about CSS)";
+  color: #fff;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.item-second::after {
+  content: "(for more CSS manipulations)";
+  color: #fff;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.item-third::after {
+  content: "(because they are awesome)";
+  color: #fff;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.item-fourth::after {
+  content: "(hm... they always dissapear)";
+  color: #fff;
+  font-size: 11px;
+  padding-left: 5px;
+}
+.item-sixth::after {
+  content: "(for my friends)";
+  color: #fff;
+  font-size: 11px;
+  padding-left: 5px;
+}
+
+/* Кнопка */
+.button-in-form {
+  cursor: pointer;
+  width: 535px;
+  height: 45px;
+  background-color: #4a4f56;
+  border: none;
+}
+.button-in-form span {
+  color: #ff8984;
+  font-size: 18px;
+  line-height: 21px;
 }
