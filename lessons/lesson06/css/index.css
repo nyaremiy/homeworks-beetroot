@@ -7,6 +7,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+img {
+  width: 100%;
+}
 .header {
   text-align: center;
   background: #4a4f56;
@@ -142,4 +145,43 @@ body {
   color: #ff8984;
   font-size: 18px;
   line-height: 21px;
+}
+.extra-task {
+  margin-top: 100px;
+}
+.title-extra {
+  text-align: center;
+}
+.link-task ul li a{
+  text-decoration: none;
+  color: #0A1B1F;
+  padding: 15px;
+  font-size: 23px;
+
+}
+.img-box {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.img-box img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(0,0,0);
+}
+.link-game {
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  display: block;
+  margin: 50px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  background-color: #0A1B1F;
+  padding: 30px 0;
+  margin-top: 20px;
 }
