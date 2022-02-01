@@ -50,7 +50,7 @@ body {
 .checkbox-item {
   width: 535px;
   height: 45px;
-  display: block;
+  display: flex;
   background-color: #88839e;
 }
 /* Кожен другий елемент іншого кольору */
@@ -58,9 +58,9 @@ body {
   background-color: #7a7593;
 }
 /* Відцентрував */
-label {
+.checkbox-item label {
   display: block;
-  padding: 12px 0 0 33px;
+  margin: auto 0;
 }
 /* Видалив стандартий значок type="checkbox" 
 Зайшов такий спосіб в інтернеті, але не до кінця розібрався як він працює.*/
@@ -70,15 +70,14 @@ label {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  padding-left: 20px;
 }
 /* Створив білий квадратик для Checkbox */
 .check-style {
   position: absolute;
+  margin-left: 12px;
   width: 19px;
   height: 19px;
   background-color: white;
-  margin-left: -20px;
 }
 /* Додав галочку до Checkbox */
 .check-box:checked + .check-style::before {
@@ -90,41 +89,45 @@ label {
   top: 4px;
   left: 3px;
 }
+.checkbox-item:hover {
+  background-color: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.checkbox-item:active {
+  background-color: #ff8984;
+}
+.check-box:checked ~ .item,
+.check-box:checked ~ .item::after {
+  color: #9b96ac;
+  text-decoration: line-through;
+}
+
 /* Стилізую текст */
 .input-text {
-  padding-left: 16px;
+  padding-left: 50px;
   color: #fff;
   font-size: 18px;
 }
-.item-first::after {
-  content: "(for the next lessons about CSS)";
+.item::after {
   color: #fff;
   font-size: 11px;
   padding-left: 5px;
+}
+.item-first::after {
+  content: "(for the next lessons about CSS)";
 }
 .item-second::after {
   content: "(for more CSS manipulations)";
-  color: #fff;
-  font-size: 11px;
-  padding-left: 5px;
 }
 .item-third::after {
   content: "(because they are awesome)";
-  color: #fff;
-  font-size: 11px;
-  padding-left: 5px;
 }
 .item-fourth::after {
   content: "(hm... they always dissapear)";
-  color: #fff;
-  font-size: 11px;
-  padding-left: 5px;
 }
 .item-sixth::after {
   content: "(for my friends)";
-  color: #fff;
-  font-size: 11px;
-  padding-left: 5px;
 }
 
 /* Кнопка */

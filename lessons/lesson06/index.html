@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinner Shopping List</title>
+    <!-- Додав іконку для сайту -->
+    <link rel="shortcut icon" href="./images/check.png" type="image/x-icon" />
+    <!-- Підключив стилі шрифтів -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS файли -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -23,60 +27,64 @@
           <span class="header-text">Let’s go to the mall!</span>
         </div>
       </header>
+      <!-- Розділ сайту з формою -->
       <div class="section-form">
         <div class="wrapper-form">
           <form class="form-block">
             <div class="wrapper-checkbox">
-                <!-- Список чекбоксів -->
-                  <!-- Пустий тег <span.check-style> відповідає за квадратик з галочкою -->
+              <!-- Список чекбоксів -->
+              <!-- Пустий тег <span.check-style> відповідає за квадратик з галочкою -->
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-first">A lot of pickles</span>
+                  <span class="input-text item-first item"
+                    >A lot of pickles</span
+                  >
                 </label>
               </div>
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-second">10 apples</span>
+                  <span class="input-text item-second item">10 apples</span>
                 </label>
               </div>
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-third">20 oranges</span>
+                  <span class="input-text item-third item">20 oranges</span>
                 </label>
               </div>
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-fourth">13 plates</span>
+                  <span class="input-text item-fourth item">13 plates</span>
                 </label>
               </div>
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text">15 bentos</span>
+                  <span class="input-text item">15 bentos</span>
                 </label>
               </div>
               <div class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-sixth">1 bottle of Sake </span>
+                  <span class="input-text item-sixth item"
+                    >1 bottle of Sake
+                  </span>
                 </label>
               </div>
             </div>
-<!-- Кнопка -->
+            <!-- Кнопка -->
             <button type="submit" class="button-in-form">
               <span> Bon appetit :) </span>
             </button>
-
           </form>
         </div>
       </div>
