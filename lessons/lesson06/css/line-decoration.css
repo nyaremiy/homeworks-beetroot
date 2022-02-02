@@ -13,22 +13,22 @@
   opacity: 0;
 }
 .text-line-first-element {
-  width: 257px;
+  width: 278px;
 }
 .text-line-second-element {
-  width: 206px;
+  width: 227px;
 }
 .text-line-third-element {
-  width: 207px;
+  width: 236px;
 }
 .text-line-fourth-element {
-  width: 198px;
+  width: 221px;
 }
 .text-line-fiftth-element {
-  width: 69px;
+  width: 79px;
 }
 .text-line-sixtth-element {
-  width: 189px;
+  width: 204px;
 }
 .check-box:checked ~ .line-decor {
   opacity: 1;
