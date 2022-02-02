@@ -5,7 +5,9 @@
   transition: all 0.1s ease-in;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  /* В завдані Trebuchet шрифт, в макеті Roboto */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
 }
 img {
   width: 100%;
@@ -30,6 +32,7 @@ img {
 .header-wrapper {
   padding-top: 20px;
 }
+/* Стилі для секції з  формою */
 .section-form {
   background-color: #3b3f45;
   width: 100%;
@@ -53,8 +56,8 @@ img {
 .checkbox-item {
   width: 535px;
   height: 45px;
-  display: flex;
   background-color: #88839e;
+  display: flex;
 }
 /* Кожен другий елемент іншого кольору */
 .checkbox-item:nth-child(even) {
@@ -64,7 +67,9 @@ img {
 .checkbox-item label {
   display: block;
   margin: auto 0;
+  cursor: pointer;
 }
+
 /* Видалив стандартий значок type="checkbox" 
 Зайшов такий спосіб в інтернеті, але не до кінця розібрався як він працює.*/
 .check-box {
@@ -82,6 +87,7 @@ img {
   height: 19px;
   background-color: white;
 }
+
 /* Додав галочку до Checkbox */
 .check-box:checked + .check-style::before {
   content: "";
@@ -92,6 +98,12 @@ img {
   top: 4px;
   left: 3px;
 }
+/* Коли Checked колір тексту міняється */
+.check-box:checked ~ .item-span::after,
+.check-box:checked ~ .silver-text {
+  color: #9b96ac;
+}
+/* Дії */
 .checkbox-item:hover {
   background-color: #625e77;
   border-top: 3px solid #fff;
@@ -100,23 +112,24 @@ img {
 .checkbox-item:active {
   background-color: #ff8984;
 }
-.check-box:checked ~ .item,
-.check-box:checked ~ .item::after {
+.check-box:checked {
   color: #9b96ac;
-  text-decoration: line-through;
 }
-
-/* Стилізую текст */
+/* Головний текст */
 .input-text {
   padding-left: 50px;
   color: #fff;
   font-size: 18px;
+  display: flex;
 }
-.item::after {
+
+.item-span::after {
   color: #fff;
   font-size: 11px;
+  margin: auto 0;
   padding-left: 5px;
 }
+/* Додав менший текст за допомогою ::after */
 .item-first::after {
   content: "(for the next lessons about CSS)";
 }
@@ -146,18 +159,18 @@ img {
   font-size: 18px;
   line-height: 21px;
 }
+/* Стилі до другого завдання */
 .extra-task {
   margin-top: 100px;
 }
 .title-extra {
   text-align: center;
 }
-.link-task ul li a{
+.link-task ul li a {
   text-decoration: none;
-  color: #0A1B1F;
-  padding: 15px;
+  color: #0a1b1f;
   font-size: 23px;
-
+  padding-left: 20px;
 }
 .img-box {
   width: 70%;
@@ -166,7 +179,7 @@ img {
 }
 .img-box img {
   border-radius: 10px;
-  box-shadow: 0 0 20px rgb(0,0,0);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 .link-game {
   font-size: 22px;
@@ -181,7 +194,7 @@ img {
   width: 100%;
   text-align: center;
   color: aliceblue;
-  background-color: #0A1B1F;
+  background-color: #0a1b1f;
   padding: 30px 0;
   margin-top: 20px;
 }

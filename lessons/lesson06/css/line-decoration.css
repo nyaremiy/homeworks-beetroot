@@ -1,0 +1,35 @@
+/* Створив окремий файл, щоб намалювали лінію на тексті.
+Спочатку пробував text-decoration: line-through;,
+але лінія чомусь не співпадала на обох текстах(тобто на головому span і ::after),
+завжди появллось +-2px різниці.
+ */
+.line-decor {
+  position: absolute;
+  display: block;
+  background-color: #9b96ac;
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 1px;
+  opacity: 0;
+}
+.text-line-first-element {
+  width: 257px;
+}
+.text-line-second-element {
+  width: 206px;
+}
+.text-line-third-element {
+  width: 207px;
+}
+.text-line-fourth-element {
+  width: 198px;
+}
+.text-line-fiftth-element {
+  width: 69px;
+}
+.text-line-sixtth-element {
+  width: 189px;
+}
+.check-box:checked ~ .line-decor {
+  opacity: 1;
+}

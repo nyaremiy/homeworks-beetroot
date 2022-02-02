@@ -12,15 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+      <link rel="stylesheet" href="./fonts/font.css">
     <!-- CSS файли -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/line-decoration.css">
   </head>
   <body>
     <div class="wrapper">
-      <!-- Header -->
+      <!-- Хедер -->
       <header class="header">
         <div class="header-wrapper">
           <h1 class="header-title">CSS Dinner Shopping List</h1>
@@ -31,55 +32,63 @@
       <div class="section-form">
         <div class="wrapper-form">
           <form class="form-block">
+             <!-- Список чекбоксів -->
             <div class="wrapper-checkbox">
-              <!-- Список чекбоксів -->
-              <!-- Пустий тег <span.check-style> відповідає за квадратик з галочкою -->
-              <div class="checkbox-item">
+              <!-- Label потрібний, щоб в будь якому місці при кліку появлявся checked  -->
+                  <label class="checkbox-item">
+                    <label>
+                      <input type="checkbox" class="check-box" />
+                          <!-- Пустий тег <span.check-style> відповідає за квадратик з галочкою -->
+                      <span class="check-style"></span>
+                      <!-- Цей span відповідає за перекреслений текст -->
+                      <!-- line-decoration.css -->
+                        <span class="text-line-first-element line-decor"></span>
+                        <!-- Головний текст -->
+                        <span class="input-text item-span item-first silver-text">A lot of pickles</span>
+                    </label>
+                  </label>
+                  <!-- Аналогічні дії як в попередньому блоці -->
+              <label class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-first item"
-                    >A lot of pickles</span
-                  >
+                  <span class="text-line-second-element line-decor"></span>
+                    <span class="input-text item-span item-second silver-text ">10 apples</span></span>
                 </label>
-              </div>
-              <div class="checkbox-item">
+              </label>
+              <label class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-second item">10 apples</span>
+                  <span class="text-line-third-element line-decor"></span>
+                    <span class="input-text item-span item-third silver-text">20 oranges</span>
                 </label>
-              </div>
-              <div class="checkbox-item">
+              </label>
+              <label class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-third item">20 oranges</span>
+                  <span class="text-line-fourth-element line-decor"></span>
+                    <span class="input-text item-span item-fourth silver-text">13 plates</span>
                 </label>
-              </div>
-              <div class="checkbox-item">
+              </label>
+
+              <label class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item-fourth item">13 plates</span>
+                  <span class="text-line-fiftth-element line-decor"></span>
+                    <span class="input-text item-span silver-text">15 bentos</span>
                 </label>
-              </div>
-              <div class="checkbox-item">
+              </label>
+              <label class="checkbox-item">
                 <label>
                   <input type="checkbox" class="check-box" />
                   <span class="check-style"></span>
-                  <span class="input-text item">15 bentos</span>
+                  <span class="text-line-sixtth-element line-decor"></span>
+                    <span class="input-text item-span item-sixth silver-text">1 bottle of Sake</span>
                 </label>
-              </div>
-              <div class="checkbox-item">
-                <label>
-                  <input type="checkbox" class="check-box" />
-                  <span class="check-style"></span>
-                  <span class="input-text item-sixth item"
-                    >1 bottle of Sake
-                  </span>
-                </label>
-              </div>
+              </label>
             </div>
             <!-- Кнопка -->
             <button type="submit" class="button-in-form">
