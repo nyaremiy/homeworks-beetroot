@@ -7,22 +7,137 @@
     <title>weather forecast</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/weather-icons.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="wrapper-header">
         <header class="header">
           <nav>
-            <ul>
-              <li><!--Пусто, додав ці теги для семантики--></li>
-            </ul>
+            
+              <!--Пусто, додав ці теги для семантики-->
+          
           </nav>
         </header>
       </div>
       <!-- Табличка з погодою -->
       <div class="wrapper-content-table">
-        <div class="wrapper-content">
-          <div class="table-weather"></div>
+        <div class="content-table">
+          <div class="table-weather">
+            <!-- Перший рядок -->
+            <div class="f-line">
+              <ul>
+                <li class="item-f">
+                  <span class="f-text">Lisbon</span>
+                  <br>
+                  <span class="s-text">
+                    21&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+                <li class="item-s">
+                  <span class="f-text">Paris</span>
+                  <br>
+                  <span class="s-text">
+                    19&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+                <li class="item-th">
+                  <span class="f-text">Belgrade</span>
+                  <br>
+                  <span class="s-text">
+                    5&degC
+                    <i class="wi wi-day-rain"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Другий рядок -->
+            <div class="s-line">
+              <ul>
+                <li class="item-f">
+                  <span class="f-text">Venice</span>
+                  <br>
+                  <span class="s-text">
+                    21&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+                <li class="item-s">
+                  <span class="f-text">Tel Aviv</span>
+                  <br>
+                  <span class="s-text">
+                    32&degC
+                    <i class="wi wi-night-clear"></i>
+                  </span>
+                </li>
+                <li class="item-th">
+                  <span class="f-text">Kyiv</span>
+                  <br>
+                  <span class="s-text">
+                    22&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+                <li class="item-fr">
+                  <span class="f-text">Amsterdam</span>
+                  <br>
+                  <span class="s-text">
+                    28&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Третій рядок -->
+            <div class="th-line">
+              <ul>
+                <li class="item-f">
+                  <span class="f-text">Tokyo</span>
+                  <br>
+                  <span class="s-text">
+                    17&degC
+                    <i class="wi wi-sleet"></i>
+                  </span>
+                </li>
+                <li class="item-s">
+                  <span class="f-text">San Francisco</span>
+                  <br>
+                  <span class="s-text">
+                    15&degC
+                    <i class="wi wi-day-sunny"></i>
+                  </span>
+                </li>
+                <li class="item-th">
+                  <span class="f-text">Sydney</span>
+                  <br>
+                  <span class="s-text">
+                    8&degC
+                    <i class="wi wi-day-cloudy"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Четвертий рядок -->
+            <div class="fr-line">
+              <ul>
+                <li class="item-f">
+                  <span class="text-item">
+                    <span class="f-text">New Delhi</span>
+                    <br>
+                    <span class="s-text">
+                      33&degC
+                    <i class="wi wi-day-sleet"></i>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Також додаав для сематтики -->
