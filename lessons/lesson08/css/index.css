@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2b81ac;
+}
+.wrapper-content {
+  width: 800px;
+  height: 520px;
+  background-color: #3399cc;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-weather {
+  width: 540px;
+  height: 330px;
+  border: 1px solid red;
+}
