@@ -21,20 +21,21 @@ body {
   justify-content: center;
 }
 .table-weather {
-  width: 540px;
-  height: 330px;
+  width: 536px;
+  height: 326px;
+  background-color: var(--white-color);
 }
-/* Без li */
 ul {
   display: flex;
   justify-content: space-between;
 }
 li {
-  border: calc(3/2) px solid var(--white-color);
   list-style-type: none;
   letter-spacing: 0.05em;
-  padding: 20px;
+  padding: 16px 0 18px 0;
   text-align: center;
+  cursor: pointer;
+  border: solid var(--white-color);
 }
 .f-text {
   font-weight: bold;
@@ -66,34 +67,49 @@ li {
 }
 .f-line .item-f {
   background-color: #3399cc;
+  border-width: 3px 3px 0 3px;
 }
 .f-line .item-s {
   background-color: #33cccc;
+  border-width: 3px 3px 0 0;
 }
 .f-line .item-th {
   background-color: #996699;
+  border-width: 3px 3px 0 0;
 }
 .s-line .item-f {
   background-color: #c24747;
+  border-width: 3px 3px 0 3px;
 }
 .s-line .item-s {
   background-color: #e2674a;
+  border-width: 3px 3px 0 0;
 }
 .s-line .item-th {
   background-color: #ffcc66;
+  border-width: 3px 3px 0 0;
 }
-.s-line .item-th {
+.s-line .item-fr {
   background-color: #99cc99;
+  border-width: 3px 3px 0 0;
 }
 .th-line .item-f {
   background-color: #669999;
+  border-width: 3px 3px 0 3px;
 }
 .th-line .item-s {
   background-color: #cc6699;
+  border-width: 3px 3px 0 0;
 }
 .th-line .item-th {
   background-color: #339966;
+  border-width: 3px 3px 0 0;
 }
 .fr-line .item-f {
   background-color: #666699;
+  border-width: 3px 3px 3px 3px;
+}
+/* Наведення */
+.table-weather:hover li:not(li:hover) {
+  opacity: 0.5;
 }
