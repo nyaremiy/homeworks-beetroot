@@ -1,0 +1,144 @@
+:root {
+  --btn-color: #ff9900;
+  --text-color: #2f281e;
+  --p-color: #544837;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+button {
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.wrapper-content-page {
+  width: 1125px;
+  margin: 0 auto;
+}
+.wrapper-header {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+.logo,
+.list-items,
+.logo-butttons,
+.header {
+  display: flex;
+  align-items: center;
+}
+.header {
+  margin-top: 20px;
+}
+.logo-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.logo-word {
+  width: 142px;
+  height: 28px;
+}
+.logo-items {
+  margin-left: 320px;
+}
+.list-items .item {
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.logo-butttons {
+  margin-left: 30px;
+}
+.wrapper-btn-sing-up {
+  margin-left: 15px;
+}
+.b-sing-in,
+.b-sing-up {
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.b-sing-in {
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+  background-color: #fff;
+}
+.b-sing-up {
+  color: #fff;
+  background-color: var(--btn-color);
+}
+/* 2 */
+.first-section {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-first {
+  font-weight: bold;
+  margin-top: 82px;
+  font-size: 44px;
+  line-height: 54px;
+  color: var(--text-color);
+}
+.p-first {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--p-color);
+}
+.image-box-f {
+  width: 604px;
+  height: 494px;
+}
+.button-box {
+  margin-top: 50px;
+}
+.button-box .btn {
+  padding: 15px 40px;
+}
+.button-box .btn:first-child {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+.button-box .btn:last-child {
+  background-color: #fff;
+  color: var(--btn-color);
+}
+.button-box .btn:last-child::before {
+  content: url(./../images/play-ico.svg);
+  width: 20px;
+  height: 16px;
+  position: relative;
+  top: 5px;
+  margin-right: 8px;
+}
