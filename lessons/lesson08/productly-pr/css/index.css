@@ -110,13 +110,13 @@ button {
   line-height: 54px;
   color: var(--text-color);
 }
-.p-first {
+.paragraph-first {
   margin-top: 30px;
   font-size: 18px;
   line-height: 28px;
   color: var(--p-color);
 }
-.image-box-f {
+.image-box-first {
   width: 604px;
   height: 494px;
 }
@@ -181,7 +181,7 @@ button {
   font-size: 16px;
   line-height: 26px;
 }
-.button-section-s .btn {
+.button-section-second .btn {
   background-color: var(--btn-color);
   color: #fff;
   padding: 14px 34px;
