@@ -36,6 +36,9 @@ li {
   text-align: center;
   cursor: pointer;
   border: solid var(--white-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .f-text {
   font-weight: bold;
