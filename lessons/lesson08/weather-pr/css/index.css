@@ -13,7 +13,7 @@ body {
 }
 .content-table {
   background-color: #3399cc;
-  width: 800px;
+  max-width: 800px;
   height: 520px;
   margin: 15px auto;
   display: flex;
