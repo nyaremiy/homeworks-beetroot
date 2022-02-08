@@ -40,7 +40,7 @@ button {
   cursor: pointer;
 }
 .wrapper-content-page {
-  width: 1125px;
+  max-width: 1125px;
   margin: 0 auto;
 }
 .wrapper-header {
