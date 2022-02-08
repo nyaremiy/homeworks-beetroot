@@ -16,160 +16,43 @@
     <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
   </head>
   <body>
-    <!-- Перший розділ сайту -->
-    <div class="section_1">
-      <header class="header">
-        <nav class="header_list">
-          <!-- Посилання на розділи по сторінці -->
-          <ul class="header_list_ul">
-            <li><a href="./../../index.html">Home</a></li>
-            <li><a href="#about_me">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="vector">
-          <!-- Лінія з тінню під посиланями -->
+    <div class="wrapper">
+      <div class="wrapper-content">
+        <div class="wrapper-header">
+          <header class="header">
+            <nav class="header-links-box">
+              <ul class="list-links">
+                <li class="list-item"><a href="" class="item-link">Home</a></li>
+                <li class="list-item"><a href="" class="item-link">About me</a></li>
+                <li class="list-item"><a href="" class="item-link">Skills</a></li>
+                <li class="list-item"><a href="" class="item-link">Portfolio</a></li>
+                <li class="list-item"><a href="" class="item-link">Contacts</a></li>
+              </ul>
+            </nav>
+          </header>
         </div>
-      </header>
-      <h1 class="Denis_name">Denis Novik</h1>
-      <div class="image">
-        <img src="./images/DenisPhoto.jpg" alt="Denis Novik" />
-      </div>
-    </div>
-    <!-- Другий розділ сайту.
-    Декілька параграфів з іформацією про "Denis Novik" -->
-    <div class="section_about_me" id="about_me">
-      <h2 class="about_h2">About me</h2>
-      <div class="about_content_p">
-        <p>
-          Hi, I'm Denis – UX/UI designer from Minsk.<br />
-          I'm interested in design and everything connected with it.
-        </p>
-        <p class="second_p">
-          I'm studying at courses "Web and mobile design<br />
-          interfaces" in IT-Academy.
-        </p>
-        <p>
-          Ready to implement excellent projects<br />
-          with wonderful people.
-        </p>
+        <!-- Перша секція -->
+        <div class="wrapper-section-image">
+          <div class="section-image">
+            <h1 class="title-name">Denis Novik</h1>
+            <img src="./images/DenisPhoto.jpg" alt="Denis Novik" class="image-box">
+          </div>
+        </div>
+        <!-- Друга секція -->
+        
+        <div class="wrapper-section-about-me">
+          <div class="section-about-me">
+            <h2 class="title">About me</h2>
+            <div class="about-spans">
+              <span class="about-spans-item">Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.</span>
+              <span class="about-spans-item">I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy. </span>
+              <span class="about-spans-item">Ready to implement excellent projects<br> with wonderful people.</span>
+            </div>
+          </div>
+        </div>
+        <!-- Трет секція -->
       </div>
     </div>
 
-    <!-- Третій розділ сайту.
-Містить інформацію про вміння користуватись програмами для роботи -->
-    <div class="skills" id="skills">
-      <h2 class="skills_h2">Skills</h2>
-      <p class="skills_p">I work in such programs as</p>
-      <section class="skills_section">
-        <!-- Секція з інформацією про Adobe Photoshop -->
-        <section class="skills_sections">
-          <img src="./images/Photoshop-Ico.png" alt="photoshop" />
-          <span class="skills_span"
-            >Adobe <br />
-            Photoshop</span>
-          <ul class="skills_ul_stars">
-            <!-- Іконки зірочок -->
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
-          </ul>
-        </section>
-        <!-- Секція з інформацією про Adobe Illustrator -->
-        <section class="skills_sections">
-          <img src="./images/Illustartor-Ico.png" alt="illustrator" />
-          <span class="skills_span"
-            >Adobe <br />
-            Illustrator</span>
-          <ul class="skills_ul_stars">
-            <!-- Іконки зірочок -->
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star2.png" alt="зірочка" /></li>
-            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
-          </ul>
-        </section>
-        <!-- Секція з інформацією про Adobe After Effects -->
-        <section class="skills_sections">
-          <img src="./images/After-effects-Ico.png" alt="after-effects" />
-          <span class="skills_span"
-            >Adobe <br />
-            After Effects</span>
-          <ul class="skills_ul_stars">
-            <!-- Іконки зірочок -->
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
-          </ul>
-        </section>
-        <!-- Секція з інформацією про Figma -->
-        <section class="skills_sections">
-          <img src="./images/Figma-Ico.png" alt="figma" />
-          <span class="skills_span figma_span">Figma</span>
-          <!-- Іконки зірочок -->
-          <ul class="skills_ul_stars">
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src="./images/Star.png" alt="зірочка" /></li>
-            <li><img src=".//images/Star2.png" alt="зірочка" /></li>
-          </ul>
-        </section>
-      </section>
-    </div>
-
-    <!-- Четвертий розділ -->
-    <!-- Містить декілька проектів "Denis Novik" -->
-    <div class="section_portfolio" id="portfolio">
-      <h2>Portfolio</h2>
-      <!-- Перша секція з картинкою роботи -->
-      <section>
-        <img src="./images/img_one.png" alt="portfolio" />
-        <!-- Посилання на проект -->
-        <a href="#">Online fashion store - Homepage</a>
-      </section>
-      <!-- Друга секція з картинкою роботи -->
-      <section>
-        <img src="./images/img_two.png" alt="portfolio" />
-        <!-- Посилання на проект -->
-        <a href="#">Reebok Store - Concept</a>
-      </section>
-      <!-- Третя секція з картинкою роботи -->
-      <section>
-        <img src="./images/img_three.png" alt="portfolio" />
-        <!-- Посилання на проект -->
-        <a href="#">Braun Landing Page - Concept</a>
-      </section>
-    </div>
-
-    <!-- П'ятий розділ сайту -->
-    <footer class="footer" id="contacts">
-      <h2>Contacts</h2>
-      <p>
-        Want to know more or just chat? <br />
-        You are welcome!
-      </p>
-      <!-- Кнопка -->
-      <button type="button" class="btn"><span>Send message</span></button>
-      <!-- Посилання на соціальні мережі -->
-      <nav class="social_links">
-        <a href="#"><img src="./images/icon01.png" alt="соціальна мережа" /></a>
-        <a href="#"><img src="./images/icon02.png" alt="соціальна мережа" /></a>
-        <a href="#"><img src="./images/icon03.png" alt="соціальна мережа" /></a>
-        <a href="#"><img src="./images/icon04.png" alt="соціальна мережа" /></a>
-      </nav>
-      <p class="footer_p_last">
-        Like me on<br />
-        LinkedIn, Instagram, Behance,<br />
-        Dribble
-      </p>
-    </footer>
   </body>
 </html>
