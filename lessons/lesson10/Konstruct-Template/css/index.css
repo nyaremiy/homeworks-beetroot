@@ -16,26 +16,28 @@ a {
 image {
   width: 100%;
 }
-.wrapper-header {
+.wrapper-header,
+.wrapper-content {
   display: flex;
   justify-content: center;
 }
 .mw-page {
-  max-width: 1880px;
-  padding: 0 20px;
+  max-width: 1870px;
+  padding: 0 10px;
 }
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  flex-wrap: wrap;
 }
 .header-text {
   display: flex;
 }
 .header-nav-item {
   display: flex;
+  font-size: 22px;
 }
 .header-item {
   margin: 0 2px;
@@ -46,10 +48,51 @@ image {
   color: #fff;
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 22px;
 }
 .header-logo {
-  /* Зображення не змінює розміри */
+  /* Не змінювались розміри Логотипа
+  Змінив height через код svg, незнаю наскільки це правильно)
+  */
   max-width: 245px;
-  max-height: 56px;
+  max-height: 50px;
+}
+/* Контент */
+.content-page {
+  margin-top: 40px;
+}
+.title-h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 40px;
+
+}
+.title-h2::first-letter {
+  font-size: .4em;  
+  vertical-align: 1.1em;       
+}
+.content-span {
+  display: block;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.txt-bold {
+  font-weight: 700;
+}
+.content-p,
+.content-span,
+.li-text {
+  margin-top: 20px;
+  font-size: 34px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+}
+.li-plus::before {
+  content: '+ ';
+  font-weight: 700;
+}
+.txt-code {
+  background-color: rgb(231, 229, 229);
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
