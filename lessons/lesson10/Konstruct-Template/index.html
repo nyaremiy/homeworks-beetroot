@@ -1,61 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konstruct Template</title>
-  <!-- Roboto -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Локальні шрифти -->
-  <link rel="stylesheet" href="./css/fonts.css">
-  <!-- Стилі -->
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-  <div class="wrapper">
-    <div class="wrapper-header">
-      <header class="mw-page header">
-        <div class="header-text">
-          <span class="header-lang">eng</span>
-          <nav class="header-navigation">
-            <ul class="header-nav-item">
-              <li class="header-item"><a href="#">Documentation</a></li>
-              <li class="header-item">/</li>
-              <li class="header-item"><a href="#">Who's using</a></li>
-            </ul>
-          </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konstruct Template</title>
+    <!-- Іконка -->
+    <link rel="shortcut icon" href="./images/1721868.svg" type="image/x-icon" />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Локальні шрифти -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <!-- Стилі -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-header">
+        <header class="mw-page header">
+          <div class="header-text">
+            <span class="header-lang">eng</span>
+            <nav class="header-navigation">
+              <ul class="header-nav-item">
+                <li class="header-item"><a href="#">Documentation</a></li>
+                <li class="header-item">/</li>
+                <li class="header-item"><a href="#">Who's using</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-logo">
+            <img src="./images/company-logo-black.svg" alt="Логотип" />
+          </div>
+        </header>
+      </div>
+      <div class="wrapper-content">
+        <div class="mw-page content-page">
+          <h2 class="title-h2">1 Introduction</h2>
+          <p class="content-p">
+            Welcome to the very start of your React Native journey! If you're
+            looking for environment setup instructions, they've moved to
+            <a href="#" class="text-underline">their own section</a>. Continue
+            reading for an introduction to the documentation, Native Components,
+            React, and more!
+          </p>
+          <h2 class="title-h2">2 Core Components</h2>
+          <p class="content-p">
+            React Native is an open source framework for building Android and
+            iOS applications using React and the app platform’s native
+            capabiles. With React Native, you use JavaScript to access your
+            platform’s APIs as well as to describe the appearance and behavior
+            of your UI using React components: bundles of reusable, nestable
+            code. You can learn more about React in the next section. But first,
+            let’s cover how components work in React Native.
+          </p>
+          <h2 class="title-h2">3 React Fundamentals</h2>
+          <p class="content-p">
+            React Native runs on <a href="#" class="text-underline">React</a> ,
+            a popular open source library for building user interfaces with
+            JavaScript. To make the most of React Native, it helps to understand
+            React itself. This section can get you started or can serve as a
+            refresher course.
+          </p>
+          <span class="content-span"
+            >We’re going to cover the core concepts behind React:</span
+          >
+          <!-- ul -->
+          <ul>
+            <li class="li-plus li-text">
+              <span class="txt-bold">components.</span> The rest of this
+              introduction to React uses cats in its examples: friendly,
+              approachable creatures that need names and a cafe to work in.
+            </li>
+            <li class="li-plus li-text">
+              <span class="txt-bold">JSX.</span> React and React Native use JSX,
+              a syntax that lets you write elements inside JavaScript like
+              so:<span class="txt-code">
+                &lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span
+              >. The React docs have
+              <a href="#" class="text-underline"
+                >a comprehensive guide to JSX</a
+              >
+              you can refer to learn even more. Because JSX is JavaScript, you
+              can use variables inside it. Here you are declaring a name for the
+              cat, name, and embedding it with curly braces inside
+              <span class="txt-code">&lt;Text&gt;</span>.
+            </li>
+            <li class="li-plus li-text">
+              <span class="txt-bold">props.</span> Props is short for
+              “properties”.
+            </li>
+            <li class="li-plus li-text">
+              <span class="txt-bold">state.</span> While you can think of props
+              as arguments you use to configure how components render, state is
+              like a component’s personal data storage. State is useful for
+              handling data that changes over time or that comes from user
+              interaction. State gives your components memory!
+            </li>
+          </ul>
+          <h2 class="title-h2">4 Handling Text Input</h2>
+          <p class="content-p">
+            TextInput is a Core Component that allows the user to enter text. It
+            has an onChangeText prop that takes a function to be called every
+            time the text changed, and an onSubmitEditing prop that takes a
+            function to be called when the text is submitted.
+          </p>
+          <p class="content-p">
+            For example, let's say that as the user types, you're translating
+            their words into a different language. In this new language, every
+            single word is written the same way: &#127829;. So the sentence
+            "Hello there Bob" would be translated as "&#127829; &#127829;".
+          </p>
         </div>
-        <div class="header-logo">
-          <img src="./images/company-logo-black.svg" alt="Логотип">
-        </div>
-      </header>
-    </div>
-    <div class="wrapper-content">
-      <div class="mw-page content-page">
-        <h2 class="title-h2">1 Introduction</h2>
-        <p class="content-p">Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <a href="#" class="text-underline">their own section</a>. Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
-        <h2 class="title-h2">2 Core Components</h2>
-        <p class="content-p">React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: bundles of reusable, nestable code. You can learn more about React in the next section. But first, let’s cover how components work in React Native.</p>
-        <h2 class="title-h2">3  React Fundamentals</h2>
-        <p class="content-p">React Native runs on <a href="#" class="text-underline">React</a> , a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.</p>
-        <span class="content-span">We’re going to cover the core concepts behind React:</span>
-        <!-- ul -->
-        <ul>
-          <li class="li-plus li-text"><span class="txt-bold">components.</span> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.</li>
-          <li class="li-plus li-text"><span class="txt-bold">JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so:<span class="txt-code"> &lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span>. The React docs have 
-            <a href="#" class="text-underline">a comprehensive guide to JSX</a>  you can refer to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a name for the cat, name, and embedding it with curly braces inside <span class="txt-code">&lt;Text&gt;</span>.</li>
-          <li class="li-plus li-text"><span class="txt-bold">props.</span> Props is short for “properties”. </li>
-          <li class="li-plus li-text"><span class="txt-bold">state.</span> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!</li>
-        </ul>
-        <h2 class="title-h2">4 Handling Text Input</h2>
-        <p class="content-p">TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.</p>
-        <p class="content-p">For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: &#127829;. So the sentence "Hello there Bob" would be translated as "&#127829; &#127829;".</p>
+      </div>
+      <div class="wrapper-footer">
+        <footer class="footer">2222</footer>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
