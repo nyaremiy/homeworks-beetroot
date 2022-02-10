@@ -238,6 +238,7 @@ button {
 .box-item {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main-boxes {
   margin: 200px 0 150px 0;
