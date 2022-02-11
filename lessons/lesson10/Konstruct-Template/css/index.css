@@ -60,6 +60,7 @@ image {
 }
 /* Контент */
 .content-page {
+  width: 100%;
   margin-top: 40px;
 }
 .title-h2 {
