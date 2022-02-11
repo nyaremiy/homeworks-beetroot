@@ -46,6 +46,7 @@ image {
 .header-lang {
   display: block;
   margin-right: 20px;
+  font-weight: 700;
   color: #fff;
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
