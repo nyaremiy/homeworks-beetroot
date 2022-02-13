@@ -1,5 +1,54 @@
+:root {
+  --c-black: #000;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--c-black);
+}
+.mw-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1860px;
+}
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-box {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  max-width: 350px;
+  line-height: 23px;
+  justify-content: space-between;
+}
+.black-white-text {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000;
+}
+.text-hashtag {
+  padding: 0 5px;
+}
+.logo {
+  max-width: 245px;
+  max-height: 55px;
+}
+/* Cards */
