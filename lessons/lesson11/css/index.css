@@ -1,5 +1,181 @@
+:root {
+  --c-black: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--c-black);
+}
+.mw-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 35px;
+  max-width: 1910px;
+}
+/* Header */
+.header {
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-box {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  max-width: 350px;
+  line-height: 23px;
+  justify-content: space-between;
+}
+.black-white-text {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--c-black);
+}
+.text-hashtag {
+  padding: 0 5px;
+}
+.logo {
+  max-width: 245px;
+  max-height: 55px;
+}
+/* Content */
+.line {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid #bfbfbf;
+}
+.content {
+  display: flex;
+}
+#Core,
+#React,
+#Handling {
+  /* Появляється верхій відступ при скролі id */
+  padding-top: 85px;
+  margin-top: -85px;
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+}
+#Introduction {
+  padding-top: 150px;
+  margin-top: -150px;
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+}
+.bg-image {
+  right: 0;
+  bottom: 55px;
+  position: fixed;
+  max-width: 650px;
+  max-height: 675px;
+}
+.sidebar-box {
+  width: 40%;
+  margin-top: 125px;
+}
+.sidebar {
+  top: 60px;
+  position: sticky;
+}
+.title-h2 {
+  top: 125px;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.title-h2::first-letter {
+  font-size: 16px;
+  padding-right: 20px;
+  vertical-align: super;
+}
+.text {
+  width: 60%;
+  z-index: 1;
+  margin-bottom: 55px;
+  margin-top: 150px;
+}
+.title-h3 {
+  font-size: 40px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.title-h3:first-child {
+  margin-top: 15px;
+}
+.title-h3::before {
+  content: "";
+  width: 85px;
+  height: 12px;
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  background-color: var(--c-black);
+}
+.content-span {
+  display: block;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.txt-bold {
+  font-weight: 700;
+}
+.content-p,
+.content-span,
+.li-text {
+  font-size: 32px;
+  margin-top: 20px;
+  line-height: 48px;
+  margin-bottom: 80px;
+  letter-spacing: 0.04em;
+}
+.li-plus::before {
+  content: "+ ";
+  font-weight: 700;
+}
+.txt-code {
+  background-color: rgb(231, 229, 229);
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+/* Footer */
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  position: fixed;
+  padding: 20px 0;
+  font-weight: 700;
+  text-align: center;
+  background-color: #fff;
 }

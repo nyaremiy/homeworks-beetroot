@@ -1,6 +1,6 @@
 :root {
   --c-black: #000;
-  --card-color: #E6E6E6;
+  --card-color: #e6e6e6;
 }
 * {
   margin: 0;
@@ -19,17 +19,17 @@ a {
   color: var(--c-black);
 }
 .line {
-  border: 1px solid #BFBFBF;
+  border: 1px solid #bfbfbf;
 }
 .mw-page {
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
-  max-width: 1860px;
+  padding: 0 35px;
+  max-width: 1910px;
 }
 /* Header */
 .header {
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1;
@@ -90,13 +90,13 @@ a {
   height: 280px;
   margin: 0 15px;
   perspective: 1000px;
-  perspective-origin: 50%150%;
+  /* perspective-origin: 50% 150%; */
 }
 .card-item:first-child {
-  margin-left: 10px;
+  margin-left: 35px;
 }
 .card-item:last-child {
-  margin-right: 10px;
+  margin-right: 35px;
 }
 .card-content {
   width: 100%;
@@ -110,10 +110,10 @@ a {
   backface-visibility: hidden;
 }
 .card-face {
-   top: 50%;
-   left: 50%;
-   position: absolute;
-   transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 .card-backface {
   top: 50%;
@@ -122,10 +122,11 @@ a {
   transform: translate(-50%, -50%) rotateX(-180deg);
 }
 .card-item:hover .card-content {
-  transform: rotateX(-180deg);
+  transform: rotateX(180deg);
   background-color: var(--c-black);
-  transition: .6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Footer */
 .footer {
   left: 0;
   right: 0;
