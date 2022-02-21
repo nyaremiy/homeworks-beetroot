@@ -2,6 +2,7 @@
   --btn-color: #ff9900;
   --text-color: #2f281e;
   --p-color: #544837;
+  --color-white: #fff;
 }
 * {
   margin: 0;
@@ -18,8 +19,8 @@ h6 {
 }
 
 body {
-  background-color: #fff;
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-white);
 }
 img {
   width: 100%;
@@ -33,4 +34,288 @@ a {
 }
 button {
   cursor: pointer;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1164px;
+}
+/* Header */
+.c-header {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.c-header__wrapper,
+.c-design__wrapper,
+.c-design-pro__wrapper,
+.c-product-mg__wrapper,
+.c-marketers__wrapper,
+.c-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 186px;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-logo__icon {
+  width: 32px;
+  height: 32px;
+}
+.c-logo__text {
+  width: 144px;
+  height: 28px;
+}
+.c-header__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.c-navigation__list {
+  display: flex;
+  font-size: 14px;
+  flex-wrap: wrap;
+  line-height: 28px;
+  color: var(--text-color);
+}
+.c-navigation__item {
+  margin-right: 30px;
+  padding: 5px;
+}
+.c-navigation__item:last-child {
+  margin-right: 0;
+}
+.e-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: var(--btn-color);
+  color: var(--color-white);
+}
+.c-header__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+.e-button-fw {
+  font-weight: 600;
+}
+.e-button--transparent {
+  color: #173a56;
+  margin-right: 15px;
+  border: 1px solid #bcd0e5;
+  background-color: var(--color-white);
+}
+/* Design section */
+.c-design {
+  margin-top: 30px;
+}
+.c-design__block {
+  width: 100%;
+  max-width: 458px;
+}
+.e-button--size {
+  padding: 15px 40px;
+}
+.c-design__title {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 54px;
+  color: var(--text-color);
+}
+.c-design__description {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 28px;
+}
+.c-design__elements {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  margin-top: 45px;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-design__link {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--btn-color);
+}
+.c-design__link::before {
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+  width: 20px;
+  height: 16px;
+  content: url(./../images/play-ico.svg);
+}
+.c-design__image-box {
+  max-width: 605px;
+  max-height: 495px;
+}
+/* Design tools section */
+.c-design-tools {
+  margin-top: 100px;
+}
+.c-design-tools__title {
+  margin: 0 auto;
+  font-size: 36px;
+  max-width: 540px;
+  line-height: 54px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+}
+.c-design-tools__cards {
+  width: 100%;
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-between;
+}
+.c-card {
+  width: 100%;
+  max-width: 240px;
+}
+.c-card__icon-block {
+  width: 50px;
+  height: 50px;
+}
+.c-card__title {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 600;
+  line-height: 33px;
+  color: var(--text-color);
+}
+.c-card__subtitle {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--p-color);
+}
+.c-design-tools__button {
+  margin-top: 60px;
+  text-align: center;
+}
+/* Design-Pro section */
+.c-design-pro {
+  margin-top: 200px;
+}
+.c-design-pro__block,
+.c-product-mg__block,
+.c-marketers__bock {
+  max-width: 485px;
+}
+.c-design-pro__desk,
+.c-product-mg__desk,
+.c-marketers__desk,
+.c-design-pro__text,
+.c-product-mg__text,
+.c-marketers__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--p-color);
+}
+.c-design-pro__title,
+.c-product-mg__title,
+.c-marketers__title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 54px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.c-design-pro__subject,
+.c-marketers__subject {
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.c-design-pro__text,
+.c-marketers__text {
+  margin-top: 15px;
+}
+.c-design-pro__image-box {
+  max-width: 520px;
+  max-height: 575px;
+}
+/* Product-Mg section */
+.c-product-mg {
+  margin-top: 100px;
+}
+.c-product-mg__imag-box {
+  max-width: 535px;
+  max-height: 520px;
+}
+.c-product-mg__item {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.c-product-mg__icon-box {
+  max-width: 35px;
+  max-height: 35px;
+  margin-right: 30px;
+}
+.c-product-mg__text--style {
+  max-width: 385px;
+}
+/* Marketers section */
+.c-marketers {
+  margin-top: 100px;
+}
+.c-marketers__image-box {
+  max-width: 540px;
+  max-height: 610px;
+}
+/* Footer */
+.c-footer {
+  margin-top: 150px;
+}
+.c-footer__wrapper {
+  border-top: 1px solid rgba(188, 208, 229, 0.496913);
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.c-footer .c-logo {
+  align-self: flex-start;
+}
+.c-footer__navigation {
+  display: flex;
+  margin-top: 20px;
+}
+.c-footer__item {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.c-footer__form {
+  width: 100%;
+  max-width: 325px;
+}
+.e-tel-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+.c-footer__button {
+  margin-top: 20px;
 }
