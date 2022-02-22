@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
     />
     <!-- *Styles -->
     <!-- Normalize.css -->
@@ -29,12 +29,12 @@
     <div class="wrapper">
       <!-- *Header -->
       <header class="c-header">
-        <div class="c-header__wrapper">
+        <div class="container c-header__wrapper">
           <!-- Menu -->
           <nav class="c-navigation">
             <ul class="c-navigation__list">
               <li class="c-navigation__item">
-                <a href="#" class="c-navigation__link">Home</a>
+                <a href="#" class="c-navigation__link c-navigation__link--black">Home</a>
               </li>
               <li class="c-navigation__item">
                 <a href="#" class="c-navigation__link">About me</a>
@@ -54,7 +54,7 @@
       </header>
       <!-- *Info section -->
       <div class="c-info">
-        <div class="c-info__wrapper">
+        <div class="container c-info__wrapper">
           <h1 class="c-info__title">Denis Novik</h1>
           <div class="c-info__image-box">
             <img
@@ -68,8 +68,8 @@
       </div>
       <!-- *About me section -->
       <div class="c-about-me">
-        <div class="c-about-me__wrapper">
-          <h2 class="c-about-me__title">About me</h2>
+        <div class="container c-about-me__wrapper">
+          <h2 class="c-about-me__title h-title">About me</h2>
           <div class="c-about-me__block">
             <div class="c-about-me__subject">
               Hi, I'm Denis – UX/UI designer from Minsk. <br />I'm interested in
@@ -88,8 +88,8 @@
       </div>
       <!-- *Skills -->
       <div class="c-skills">
-        <div class="c-skills__wrapper">
-          <h2 class="c-skills__title">Skills</h2>
+        <div class="container c-skills__wrapper">
+          <h2 class="c-skills__title h-title">Skills</h2>
           <div class="c-skills__subtitle">I work in such programs as</div>
           <div class="c-skills__cards">
             <!-- * Card 1-->
@@ -98,7 +98,7 @@
                 <img
                   alt="Photoshop"
                   class="c-card__image"
-                  src="./images/Photoshop.jpg"
+                  src="./images/Photoshop.svg"
                 />
               </div>
               <div class="c-card__subtitle">Adobe Photoshop</div>
@@ -152,7 +152,7 @@
                 <img
                   alt="Illustrator"
                   class="c-card__image"
-                  src="./images/Illustrator.jpg"
+                  src="./images/Illustrator.svg"
                 />
               </div>
               <div class="c-card__subtitle">Adobe Illustrator</div>
@@ -206,7 +206,7 @@
                 <img
                   alt="Illustrator"
                   class="c-card__image"
-                  src="./images/After-Effects.jpg"
+                  src="./images/After-Effects.svg"
                 />
               </div>
               <div class="c-card__subtitle">Adobe After Effects</div>
@@ -260,7 +260,7 @@
                 <img
                   alt="Illustrator"
                   class="c-card__image"
-                  src="./images/Figma.jpg"
+                  src="./images/Figma.svg"
                 />
               </div>
               <div class="c-card__subtitle">Figma</div>
@@ -313,8 +313,8 @@
       </div>
       <!-- *Portfolio section -->
       <div class="c-portfolio">
-        <div class="c-portfolio__wrapper">
-          <h2 class="c-portfolio__title">Portfolio</h2>
+        <div class="container c-portfolio__wrapper">
+          <h2 class="c-portfolio__title h-title">Portfolio</h2>
           <!-- Portfolio Image -->
           <div class="c-portfolio__image-box">
             <img
@@ -324,7 +324,9 @@
             />
           </div>
           <div class="c-portfolio__description">
+            <a href="#"  class="c-portfolio__link">
             Online fashion store - Homepage
+          </a>
           </div>
           <!-- Portfolio Image -->
           <div class="c-portfolio__image-box">
@@ -334,7 +336,10 @@
               src="./images/Portfolio-img02.jpg"
             />
           </div>
-          <div class="c-portfolio__description">Reebok Store - Concept</div>
+          <div class="c-portfolio__description">
+            <a href="#"  class="c-portfolio__link">
+            Reebok Store - Concept</div>
+            </a>
           <!-- Portfolio Image -->
           <div class="c-portfolio__image-box">
             <img
@@ -344,17 +349,20 @@
             />
           </div>
           <div class="c-portfolio__description">
+            <a href="#"  class="c-portfolio__link">
             Braun Landing Page - Concept
+            </a>
           </div>
         </div>
       </div>
       <!-- *Footer -->
       <footer class="c-footer">
-        <div class="c-footer__wrapper">
-          <h2 class="c-footer__title">Contacts</h2>
+        <div class="container c-footer__wrapper">
+          <h2 class="c-footer__title h-title">Contacts</h2>
           <div class="c-footer__subtitle">
             Want to know more or just chat?You are welcome!
           </div>
+          <!-- Button -->
           <div class="c-footer__button-box">
             <button type="button" class="e-button">
               <span>Send message</span>
@@ -362,32 +370,40 @@
           </div>
           <div class="c-footer__social-link">
             <div class="c-footer__image-box">
+              <a href="#" class="c-footer__link">
               <img
               alt="Social link"
               class="e-soc-img"
               src="./images/icons/icon01.svg"
               />
+              </a>
             </div>
             <div class="c-footer__image-box">
+              <a href="#" class="c-footer__link">
               <img
               alt="Social link"
               class="e-soc-img"
               src="./images/icons/icon02.svg"
               />
+              </a>
             </div>
             <div class="c-footer__image-box">
+              <a href="#" class="c-footer__link">
               <img
               alt="Social link"
               class="e-soc-img"
               src="./images/icons/icon03.svg"
               />
+              </a>
             </div>
             <div class="c-footer__image-box">
+              <a href="#" class="c-footer__link">
               <img
               alt="Social link"
               class="e-soc-img"
               src="./images/icons/icon04.svg"
               />
+            </a>
             </div>
           </div>
           <div class="c-footer__description">
