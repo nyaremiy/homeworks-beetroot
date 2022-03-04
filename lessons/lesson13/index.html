@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title Page -->
+    <title>Forms</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/img-icon.svg"
+      type="image/x-icon"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- * Header -->
+      <header class="c-header">
+        <div class="container c-header__wrapper">
+          <!-- * Header navigation -->
+          <nav class="c-header__navigation">
+            <ul class="c-header__list">
+              <li class="c-header__item">
+                <a href="#" class="c-header__link">Home</a>
+              </li>
+              <li class="c-header__item">
+                <a href="#" class="c-header__link">GitHub</a>
+              </li>
+              <li class="c-header__item">
+                <a href="#" class="c-header__link">GitHub Page</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- * Forms -->
+      <div class="c-forms">
+        <div class="container c-forms__wrapper">
+          <!-- * First form -->
+          <form action="#" method="get" class="c-form-registr">
+            <!-- Title -->
+            <div class="c-form-registr__title">Create an Account</div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <!-- First Name -->
+              <label class="c-form-registr__name">
+                <div class="c-form-registr__desc">First Name</div>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="firstName"
+                  class="c-form-registr__name-input"
+                />
+              </label>
+              <!-- Last Name -->
+              <label class="c-form-registr__name">
+                <div class="c-form-registr__desc">Last Name</div>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="lastName"
+                  class="c-form-registr__name-input"
+                />
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <!-- Email -->
+              <label class="c-form-registr__email">
+                <div class="c-form-registr__desc">Email</div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="c-form-registr__email-input"
+                />
+                <div class="c-form-registr__subtitle">
+                  We'll never share your email with anyone else.
+                </div>
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <!-- Radio butons -->
+              <label class="c-form-registr__radio-button">
+                <input
+                  type="radio"
+                  name="male"
+                  id="male"
+                  class="c-form-registr__radio-input"
+                />
+                <div class="c-form-registr__desc">Male</div>
+              </label>
+              <label class="c-form-registr__radio-button">
+                <input
+                  type="radio"
+                  name="male"
+                  id="male"
+                  class="c-form-registr__radio-input"
+                />
+                <div class="c-form-registr__desc">Female</div>
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <!-- Coutry -->
+              <label class="c-form-registr__country">
+                <div class="c-form-registr__desc">Country</div>
+                <select>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </label>
+              <label class="c-form-registr__city">
+                <div class="c-form-registr__desc">City</div>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="c-form-registr__city-input"
+                />
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <!-- Button -->
+              <button class="e-button" type="submit">
+                <span>Registr</span>
+              </button>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <p class="c-form-registr__text">
+                By clicking the 'Sign Up' button, you confirm that you accept
+                our <a href="#">Terms of Use</a> and
+                <a href="#">Privacy Policy</a>.
+              </p>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-registr__block">
+              <div class="c-form-registr__desc c-form-registr__desc-mod">
+                Have an account? <a href="#">Log In</a>
+              </div>
+            </div>
+          </form>
+          <!-- * Second form -->
+          <form action="#" method="get" class="c-form-profile">
+            <div class="c-form-profile__title">Profile</div>
+            <!-- Form block -->
+            <div class="c-form-profile__block">
+              <!-- Image profile -->
+              <div class="c-form-profile__profile-img">
+                <img src="#" alt="Image" class="c-form-profile__image" />
+              </div>
+              <input type="file" name="" id="" />
+            </div>
+            <!-- Form block -->
+            <div class="c-form-profile__block">
+              <!-- First Name -->
+              <label class="c-form-profile__name">
+                <div class="c-form-profile__desc">First Name</div>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="firstName"
+                  class="c-form-profile__name-input"
+                />
+              </label>
+              <!-- Email -->
+              <label class="c-form-profile__email">
+                <div class="c-form-profile__desc">Email</div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="c-form-profile__email-input"
+                />
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-profile__block">
+              <!-- Coutry -->
+              <label class="c-form-profile__country">
+                <div class="c-form-profile__desc">Country</div>
+                <select>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </label>
+              <label class="c-form-profile__city">
+                <div class="c-form-profile__desc">City</div>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="c-form-profile__city-input"
+                />
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-profile__block">
+              <label class="c-form-profile__code">
+                <label class="c-form-profile__city">
+                  <div class="c-form-profile__desc">Zip Code</div>
+                  <input
+                    type="text"
+                    name="zip-code"
+                    id="zipCode"
+                    class="c-form-profile__zip-input"
+                  />
+                </label>
+                <label class="c-form-profile__city">
+                  <div class="c-form-profile__desc">Phone Number</div>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    class="c-form-profile__tel-input"
+                  />
+                </label>
+              </label>
+            </div>
+            <!-- Form block -->
+            <div class="c-form-profile__block">
+              <!-- Button -->
+              <button class="e-button e-button-mod" type="submit">
+                <span>Registr</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- * Footer -->
+      <footer class="c-footer">
+        <div class="container c-footer__wrapper">
+          <!-- * Footer text -->
+          <div class="c-footer__text">Nazar Yaremiy 2022</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
