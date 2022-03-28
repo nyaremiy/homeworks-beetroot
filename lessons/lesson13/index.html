@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Styles -->
@@ -47,198 +47,156 @@
       <!-- * Forms -->
       <div class="c-forms">
         <div class="container c-forms__wrapper">
-          <!-- * First form -->
-          <form action="#" method="get" class="c-form-registr">
-            <!-- Title -->
-            <div class="c-form-registr__title">Create an Account</div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <!-- First Name -->
-              <label class="c-form-registr__name">
-                <div class="c-form-registr__desc">First Name</div>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="firstName"
-                  class="c-form-registr__name-input"
-                />
-              </label>
-              <!-- Last Name -->
-              <label class="c-form-registr__name">
-                <div class="c-form-registr__desc">Last Name</div>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="lastName"
-                  class="c-form-registr__name-input"
-                />
-              </label>
+          <!-- Form registration -->
+          <form action="#" method="get" class="c-form-registration">
+            <!-- Form Title -->
+            <h2 class="c-form-registration__title">Create an Account</h2>
+            <!-- Block form -->
+            <div class="c-form-registration__block">
+              <!-- First name -->
+                <label class="c-form-registration__label h-m-right">
+                  <div class="c-form-registration__subject">First Name<span class="h-red">*</span></div>
+                  <input type="text" name="FirstName" placeholder="Denis" required class="e-input">
+                </label>
+                <!-- Last name -->
+                <label class="c-form-registration__label">
+                  <div class="c-form-registration__subject">Last Name<span class="h-red">*</span></div>
+                  <input type="text" name="LastName" placeholder="Novik" required class="e-input">
+                </label>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
+            <!-- Block form -->
+            <div class="c-form-registration__block">
               <!-- Email -->
-              <label class="c-form-registr__email">
-                <div class="c-form-registr__desc">Email</div>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="c-form-registr__email-input"
-                />
-                <div class="c-form-registr__subtitle">
-                  We'll never share your email with anyone else.
-                </div>
+              <label class="c-form-registration__label">
+                <div class="c-form-registration__subject">Email<span class="h-red">*</span></div>
+                <input type="email" name="Email" placeholder="denis_novik@gmail.com" required class="e-input">
+                <div class="c-form-registration__description">We'll never share your email with anyone else.</div>
               </label>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <!-- Radio butons -->
-              <label class="c-form-registr__radio-button">
-                <input
-                  type="radio"
-                  name="male"
-                  id="male"
-                  class="c-form-registr__radio-input"
-                />
-                <div class="c-form-registr__desc">Male</div>
+            <!-- Block form -->
+            <div class="c-form-registration__block">
+              <!-- Radio button -->
+              <label class="c-form-registration__label c-form-registration__label--radio">
+                <input type="radio" name="Gender" value="Male" checked class="e-input e-input--radio">
+                <div class="c-form-registration__control-block"></div>
+                <div class="c-form-registration__subject">Male</div>
               </label>
-              <label class="c-form-registr__radio-button">
-                <input
-                  type="radio"
-                  name="male"
-                  id="male"
-                  class="c-form-registr__radio-input"
-                />
-                <div class="c-form-registr__desc">Female</div>
+              <label class="c-form-registration__label c-form-registration__label--radio">
+                <input type="radio" name="Gender" value="Female" class="e-input e-input--radio">
+                <div class="c-form-registration__control-block"></div>
+                <div class="c-form-registration__subject">Female</div>  
               </label>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <!-- Coutry -->
-              <label class="c-form-registr__country">
-                <div class="c-form-registr__desc">Country</div>
-                <select>
-                  <option value="Ukraine">Ukraine</option>
-                  <option value="Poland">Poland</option>
-                  <option value="Australia">Australia</option>
-                </select>
-              </label>
-              <label class="c-form-registr__city">
-                <div class="c-form-registr__desc">City</div>
-                <input
-                  type="text"
-                  name="city"
-                  id="city"
-                  class="c-form-registr__city-input"
-                />
+            <!-- Block form -->
+            <div class="c-form-registration__block">
+              <!-- Country -->
+              <label class="c-form-registration__label h-m-right">
+                <div class="c-form-registration__subject">Country</div>  
+                <select class="e-select" name="Country" id="js-select" onchange="colorSelect('js-select')">
+                <option disabled selected hidden>Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="China">China</option>
+                <option value="China">Other...</option>
+              </select>
+            </label>
+            <!-- City -->
+              <label class="c-form-registration__label">
+                <div class="c-form-registration__subject">City</div> 
+                <input type="text" name="City" placeholder="Lviv" class="e-input">
               </label>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <!-- Button -->
-              <button class="e-button" type="submit">
-                <span>Registr</span>
-              </button>
+            <!-- Block form  -->
+            <div class="c-form-registration__block">
+              <label class="c-form-registration__label">
+                <button type="submit" class="e-button"><span>Sing Up</span></button>
+              </label>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <p class="c-form-registr__text">
-                By clicking the 'Sign Up' button, you confirm that you accept
-                our <a href="#">Terms of Use</a> and
-                <a href="#">Privacy Policy</a>.
-              </p>
+            <!-- Block form -->
+            <div class="c-form-registration__block">
+              <div class="c-form-registration__description c-form-registration__description--mod">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</div>
             </div>
-            <!-- Form block -->
-            <div class="c-form-registr__block">
-              <div class="c-form-registr__desc c-form-registr__desc-mod">
-                Have an account? <a href="#">Log In</a>
-              </div>
+            <!-- Block form -->
+            <div class="c-form-registration__block c-form-registration__block--border">
+              <div class="c-form-registration__subject c-form-registration__subject--mod">Have an account? <a href="#">Log In</a></div>
             </div>
           </form>
-          <!-- * Second form -->
+          <!-- Form profile -->
           <form action="#" method="get" class="c-form-profile">
-            <div class="c-form-profile__title">Profile</div>
-            <!-- Form block -->
+            <!-- Form Title -->
+            <h2 class="c-form-profile__title">Profile</h2>
+            <!-- Block form -->
             <div class="c-form-profile__block">
-              <!-- Image profile -->
-              <div class="c-form-profile__profile-img">
-                <img src="#" alt="Image" class="c-form-profile__image" />
-              </div>
-              <input type="file" name="" id="" />
+              <!-- Photo -->
+                <div class="c-form-profile__img-block">
+                  <img src="./images/Photo.jpg" alt="Photo" class="c-form-profile__image">
+                </div>
+                <!-- Photo upload -->
+                <div class="c-form-profile__file-block">
+                  <!-- photo upload -->
+                  <div class="c-upload">
+                    <label class="c-upload__label" tabindex="0" onchange="getFileName()">
+                      <div id="fileName" class="c-upload__name">Upload your photo</div>
+                      <input type="file" name="file" id="fileUpDownload" class="e-input e-input--file">
+                      <div class="c-upload__bg-image"></div>
+                    </label>
+                    <button class="e-button-delete" type="button" onclick="deleteFileName()"><span></span></button>
+                  </div>
+                  <!-- text -->
+                  <div class="c-form-profile__description">Up to 1 MB (300x300 px)</div>
+                </div>
             </div>
-            <!-- Form block -->
+            <!-- Block form -->
             <div class="c-form-profile__block">
-              <!-- First Name -->
-              <label class="c-form-profile__name">
-                <div class="c-form-profile__desc">First Name</div>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="firstName"
-                  class="c-form-profile__name-input"
-                />
+              <!-- Name -->
+              <label class="c-form-profile__label h-m-right">
+                <div class="c-form-profile__subject">Name</div>
+                <input type="text" name="name" class="e-input">
               </label>
               <!-- Email -->
-              <label class="c-form-profile__email">
-                <div class="c-form-profile__desc">Email</div>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="c-form-profile__email-input"
-                />
+              <label class="c-form-profile__label">
+                <div class="c-form-profile__subject">Email</div>
+                <input type="email" name="Email" class="e-input">
               </label>
             </div>
-            <!-- Form block -->
+            <!-- Block form -->
             <div class="c-form-profile__block">
-              <!-- Coutry -->
-              <label class="c-form-profile__country">
-                <div class="c-form-profile__desc">Country</div>
-                <select>
-                  <option value="Ukraine">Ukraine</option>
-                  <option value="Poland">Poland</option>
-                  <option value="Australia">Australia</option>
-                </select>
-              </label>
-              <label class="c-form-profile__city">
-                <div class="c-form-profile__desc">City</div>
-                <input
-                  type="text"
-                  name="city"
-                  id="city"
-                  class="c-form-profile__city-input"
-                />
+              <!-- Country -->
+              <label class="c-form-profile__label h-m-right">
+                <div class="c-form-profile__subject">Country</div>  
+                <select class="e-select" name="Country" id="js-select2" onchange="colorSelect('js-select2')">
+                <option disabled selected hidden>Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="China">China</option>
+                <option value="China">Other...</option>
+              </select>
+            </label>
+            <!-- City -->
+              <label class="c-form-profile__label">
+                <div class="c-form-profile__subject">City</div> 
+                <input type="text" name="city" class="e-input">
               </label>
             </div>
-            <!-- Form block -->
+            <!-- Block form -->
             <div class="c-form-profile__block">
-              <label class="c-form-profile__code">
-                <label class="c-form-profile__city">
-                  <div class="c-form-profile__desc">Zip Code</div>
-                  <input
-                    type="text"
-                    name="zip-code"
-                    id="zipCode"
-                    class="c-form-profile__zip-input"
-                  />
-                </label>
-                <label class="c-form-profile__city">
-                  <div class="c-form-profile__desc">Phone Number</div>
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    class="c-form-profile__tel-input"
-                  />
-                </label>
+               <!-- Zip code -->
+               <label class="c-form-profile__label h-m-right">
+                <div class="c-form-profile__subject">Zip Code</div>
+                <input type="text" name="zipCode" class="e-input">
               </label>
+              <!-- Phone Number -->
+              <label class="c-form-profile__label">
+                <div class="c-form-profile__subject">Phone Number</div>
+                <input type="tel" name="phoneNumber" class="e-input">
+              </label>             
             </div>
-            <!-- Form block -->
+            <!-- 542303 -->
+            <!-- Block form  -->
             <div class="c-form-profile__block">
-              <!-- Button -->
-              <button class="e-button e-button-mod" type="submit">
-                <span>Registr</span>
-              </button>
+              <label class="c-form-profile__label">
+                <button type="submit" class="e-button e-button--size"><span>Save</span></button>
+              </label>
             </div>
           </form>
         </div>
@@ -250,6 +208,40 @@
           <div class="c-footer__text">Nazar Yaremiy 2022</div>
         </div>
       </footer>
+      <!-- Script -->
+      <script> 
+      let file;
+      const text = 'Upload your photo';
+      const colorSilver = '#e4e4e4;';
+      const colorBlack = '#1c1c1c;';
+      const fileName = document.getElementById('fileName');
+      // Set color
+        function colorSelect (idElement) {
+          document.getElementById(idElement).style = 'color:'+ colorBlack;
+        }
+       // Delete File name
+      function deleteFileName () {
+        fileName.style = 'color:' + colorSilver;
+        fileName.innerText = text;
+    }
+    // Get File name
+    function getFileName() {
+      getFilePath();
+      alert(fileName.textContent);
+      if(file == '') {
+        fileName.style = 'color:' + colorSilver;
+        fileName.innerText = text;
+      } else {
+        document.getElementById('fileName').innerText = file;
+        document.getElementById('fileName').style = 'color:' + colorBlack;
+      }
+    }
+    // Path file
+    function getFilePath () {
+      file = document.getElementById('fileUpDownload').value; //!!! 
+      file = file.replace(/\\/g, '/').split('/').pop();
+    }
+        </script>
     </div>
   </body>
 </html>
