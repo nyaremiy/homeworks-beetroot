@@ -1,0 +1,9 @@
+.c-portfolio {
+  background-color: $c-cultured;
+  padding: 100px 0;
+  &__title {
+    text-align: center;
+    font-size: em(34);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,15 @@
+mixin footer()
+  footer.c-footer#contacts
+    .container.c-footer__wrapper 
+      h2.c-footer__title Contacts
+      .c-footer__desc Want to know more or just chat? You are welcome!
+      .c-footer__button
+        +button({text: 'Send message', type: 'submit'})
+      .c-footer__social-links 
+        +link({text: '<svg class="icon icon-linkedIn-icon"><use xlink:href="#icon-linkedIn-icon"></use></svg>', class: 'e-link--social'})
+        +link({text: '<svg class="icon icon-twitter-icon"><use xlink:href="#icon-twitter-icon"></use></svg>', class: 'e-link--social'})
+        +link({text: '<svg class="icon icon-facebook-icon"><use xlink:href="#icon-facebook-icon"></use></svg>', class: 'e-link--social'})
+        +link({text: '<svg class="icon icon-dribbble-icon"><use xlink:href="#icon-dribbble-icon"></use></svg>', class: 'e-link--social'})
+      .c-footer__desc--small Like me on
+      .c-footer__desc--small LinkedIn, Instagram, Behance,
+      .c-footer__desc--small Dribble

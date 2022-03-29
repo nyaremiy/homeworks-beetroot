@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  color: #070707;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border-style: none;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.e-link {
+  font-size: 1.125em;
+  color: #828282;
+}
+
+.e-link--active {
+  color: #070707;
+}
+
+.e-link--project {
+  text-decoration: underline;
+  color: #070707;
+}
+
+.e-link--social {
+  color: #070707;
+  display: inherit;
+}
+
+.e-star--silver {
+  color: #E5E5E5;
+}
+
+.e-button {
+  background-color: #070707;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1.125em;
+  cursor: pointer;
+  padding: 0 30px;
+  color: #fff;
+  height: 45px;
+}
+
+.c-header {
+  margin-top: 10px;
+}
+
+.c-header__box {
+  padding: 10px 0 30px 0;
+  border-bottom: 1px solid #828282;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.c-navigation__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-shadow: 1px 1px 3px #66CC99, -3px -4px 3px #D9FFA7;
+}
+
+.c-navigation__item {
+  margin-right: 40px;
+}
+
+.c-navigation__item:last-child {
+  margin-right: 0;
+}
+
+.c-banner {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.c-banner__title {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.c-banner__image-box {
+  margin: 40px auto 0 auto;
+  max-width: 945px;
+}
+
+.c-about-me {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.c-about-me__title {
+  font-weight: 700;
+  font-size: 2.125em;
+}
+
+.c-about-me__block {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.c-about-me__description {
+  line-height: 25px;
+  font-size: 1.125em;
+  margin-top: 30px;
+}
+
+.c-skills {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.c-skills__title {
+  font-size: 2.125em;
+  font-weight: 700;
+}
+
+.c-skills__desc {
+  font-size: 1.125em;
+  margin-top: 30px;
+}
+
+.c-skills__cards-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-card {
+  max-width: 185px;
+  width: 100%;
+}
+
+.c-card__image-box {
+  max-width: 90px;
+  margin: 0 auto;
+}
+
+.c-card__image-box--size {
+  max-width: 60px;
+}
+
+.c-card__title {
+  margin: 20px auto 0;
+  text-align: center;
+  max-width: 115px;
+  font-weight: 400;
+  color: #828282;
+  height: 70px;
+}
+
+.c-card__star-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-portfolio {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+
+.c-portfolio__title {
+  text-align: center;
+  font-size: 2.125em;
+  font-weight: 700;
+}
+
+.c-project {
+  margin-top: 120px;
+}
+
+.c-project__link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.c-footer {
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.c-footer__title {
+  font-size: 2.125em;
+  font-weight: 700;
+}
+
+.c-footer__desc {
+  margin: 20px auto 0;
+  font-size: 1.125em;
+  line-height: 25px;
+  max-width: 275px;
+}
+
+.c-footer__desc--small {
+  font-size: 0.875em;
+  color: #828282;
+}
+
+.c-footer__button {
+  margin-top: 80px;
+}
+
+.c-footer__social-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto;
+  font-size: 2.5em;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

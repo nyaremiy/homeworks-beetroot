@@ -1,0 +1,10 @@
+mixin skills()
+  .c-skills#skills
+    .container.c-skills__wrapper
+      h2.c-skills__title Skills
+      .c-skills__desc I work in such programs as
+      .c-skills__cards-box 
+        +card({src: './assets/images/adobe-photoshop.png', title: 'Adobe Photoshop', star: 4})
+        +card({src: './assets/images/adobe-illustartor.png', title: 'Adobe Illustrator', star: 3})
+        +card({src: './assets/images/adobe-after-effects.png', title: 'Adobe After Effects', star: 4})
+        +card({src: './assets/images/figma.png', title: 'Figma', star: 4})(class= 'c-card__image-box--size')

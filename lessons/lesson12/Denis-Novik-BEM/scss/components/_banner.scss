@@ -1,0 +1,12 @@
+.c-banner {
+  margin-bottom: 100px;
+  margin-top: 30px;
+  &__title {
+    font-size: em(48);
+    font-weight: 700;
+  }
+  &__image-box {
+    margin: 40px auto 0 auto;
+    max-width: 945px;
+  }
+}

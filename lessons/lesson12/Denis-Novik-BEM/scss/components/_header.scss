@@ -1,0 +1,8 @@
+.c-header {
+  margin-top: 10px;
+  &__box {
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid $c-silver;
+    box-shadow: $b-sh-bottom;
+  }
+}

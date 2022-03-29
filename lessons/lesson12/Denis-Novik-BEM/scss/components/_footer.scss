@@ -1,0 +1,29 @@
+.c-footer {
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-align: center;
+  &__title {
+    font-size: em(34);
+    font-weight: 700;
+  }
+  &__desc {
+    margin: 20px auto 0;
+    font-size: em(18);
+    line-height: 25px;
+    max-width: 275px;
+    &--small {
+      font-size: em(14);
+      color: $c-silver;
+    }
+  }
+  &__button {
+    margin-top: 80px;
+  }
+  &__social-links {
+    justify-content: space-between;
+    margin: 30px auto ;
+    font-size: em(40);
+    max-width: 300px;
+    display: flex;
+  }
+}

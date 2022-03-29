@@ -1,0 +1,21 @@
+// COLORS
+$c-medium-aquamarine: #66CC99;
+$c-vampire-black: #070707;
+$c-platinum: #E5E5E5;
+$c-cultured: #f6f6f6; 
+$c-menthol: #D9FFA7;
+$c-silver: #828282;
+$c-white: #fff;
+$c-black: #000;
+
+// Font Family
+$ff-base: "Open Sans", sans-serif;
+
+// Font Size
+$fs-base: 16;
+
+// Box Shadow
+$b-sh-bottom: 0 5px 5px -5px rgba($c-black, 0.5);
+
+// Text Shadow
+$t-sh-normal: 1px 1px 3px $c-medium-aquamarine, -3px -4px 3px $c-menthol;

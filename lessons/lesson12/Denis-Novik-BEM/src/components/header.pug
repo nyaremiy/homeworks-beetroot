@@ -1,0 +1,5 @@
+mixin header()
+  header.c-header 
+    .container.c-header__wrapper 
+      .c-header__box
+        +navigation({'Home': './../../../../../index.html', 'About me': '#about-me', 'Skills': 'skills', 'Portfolio': 'portfolio', 'Contacts': 'contacts' })(activeLine : true)

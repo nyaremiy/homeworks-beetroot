@@ -1,0 +1,7 @@
+mixin project(args)
+  .c-project 
+    .c-project__wrapper 
+      .c-project__image-box 
+        img.c-project__image(src= args.src , alt="Project")
+      .c-project__link 
+        +link({text: args.text, class: 'e-link--project'}) 

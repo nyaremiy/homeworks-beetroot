@@ -1,0 +1,14 @@
+mixin card(args)
+  .c-card   
+    .c-card__wrapper
+      .c-card__image-box(class= attributes.class)
+        img.c-card__image(src= args.src, alt="Image")
+      h3.c-card__title= args.title
+      .c-card__star-box
+        - let starNot = 5 - args.star
+        - for (var i = 0; i < args.star; ++i) {
+          +star()
+          -}
+        - for (var i = 0; i < starNot; ++i) {
+          +star()(class= 'e-star--silver')
+          -}

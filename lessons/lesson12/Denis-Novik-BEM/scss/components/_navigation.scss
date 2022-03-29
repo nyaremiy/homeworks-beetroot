@@ -1,0 +1,13 @@
+.c-navigation {
+  &__list{
+    justify-content: center;
+    display: flex;
+    text-shadow: $t-sh-normal;
+  }
+  &__item {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

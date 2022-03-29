@@ -1,0 +1,15 @@
+.e-link{
+  font-size: em(18);
+  color: $c-silver;
+  &--active {
+    color: $c-vampire-black;
+  }
+  &--project {
+    text-decoration: underline;
+    color: $c-vampire-black;
+  }
+  &--social {
+    color: $c-vampire-black;
+    display: inherit;
+  }
+}
