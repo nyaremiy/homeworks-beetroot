@@ -1,0 +1,14 @@
+mixin navigation(args)
+  -let activeLine = attributes.activeLine;
+    nav.c-navigation 
+      ul.c-navigation__list(class= attributes.class)
+        each url, textLink in args
+          if (activeLine)
+            li.c-navigation__item 
+              +link({href: url, text: textLink, class: 'e-link--active'})
+              -activeLine = false
+          else 
+            li.c-navigation__item 
+              +link({href: url, text: textLink})
+
+

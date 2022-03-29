@@ -1,0 +1,35 @@
+.c-banner {
+  margin-top: 20px;
+  padding-top: 10px;
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  &__title {
+    color: $c-pine-tree;
+    font-size: em(44);
+    font-weight: 700;
+  }
+  &__description {
+    color: $c-olive-drab-camouflage;
+    font-size: em(18);
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  &__block {
+    width: 100%;
+    max-width: 460px;
+  }
+  &__box {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    display: flex;
+    width: 370px;
+  }
+  &__image-box {
+    max-width: 605px;
+    min-width: 400px;
+  }
+}

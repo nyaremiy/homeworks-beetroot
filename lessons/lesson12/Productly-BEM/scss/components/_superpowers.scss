@@ -1,0 +1,20 @@
+.c-superpowers {
+  margin-top: 120px;
+  padding-top: 20px;
+  &__title {
+    color: $c-pine-tree;
+    text-align: center;
+    line-height: 54px;
+    font-size: em(36);
+    max-width: 540px;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  &__items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+  &__button {
+    margin-top: 60px;
+  }
+}

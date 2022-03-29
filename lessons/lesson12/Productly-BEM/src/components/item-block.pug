@@ -1,0 +1,7 @@
+mixin itemBlock(args)
+  .c-item-block
+    .c-item-block__wrapper 
+      .c-item-block__image-block 
+        img.c-item-block__image(src= args.src, alt="Image")
+      .c-item-block__text-block 
+        .c-item-block__text= args.text

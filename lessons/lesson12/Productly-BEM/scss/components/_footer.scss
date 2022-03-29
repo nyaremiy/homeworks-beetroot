@@ -1,0 +1,15 @@
+.c-footer {
+  margin-bottom: 100px;
+  &__wrapper {
+    border-top: 1px solid $c-beau-blue;
+    justify-content: space-between;
+    padding-top: 50px;
+    display: flex;
+  }
+  &__nav {
+    width: 100%;
+    display: flex;
+    max-width: 380px;
+    justify-content: space-between;
+  }
+}

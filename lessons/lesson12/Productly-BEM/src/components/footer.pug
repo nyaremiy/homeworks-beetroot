@@ -1,0 +1,10 @@
+mixin footer()
+  footer.c-footer 
+    .container.c-footer__wrapper 
+      .c-footer__logo 
+        +logo()
+      .c-footer__nav
+        +navigation({'About Us' : '', 'Blog': '', 'Contact': '', 'FAQ': ''})(class= 'c-navigation__list--column', activeLine= false) 
+        +navigation({'Disclaimer' : '', 'Financing': '', 'Privacy Policy': '', 'Terms of Service': ''})(class= 'c-navigation__list--column', activeLine= false) 
+      .c-footer__form
+       +form()

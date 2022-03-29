@@ -1,0 +1,20 @@
+.c-card {
+  max-width: 230px;
+  margin-top: 50px;
+  &__image-box {
+    max-width: 50px;
+  }
+  &__title {
+    color: $c-pine-tree;
+    font-size: em(22);
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  &__description {
+    color: $c-olive-drab-camouflage;
+    font-size: em($fs-base);
+    line-height: 26px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+}

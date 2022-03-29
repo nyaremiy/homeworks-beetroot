@@ -1,0 +1,16 @@
+.c-header {
+  margin-top: 20px;
+  padding: 15px 0;
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  &__block {
+    align-items: center;
+    display: flex;
+  }
+  &__nav {
+    margin-right: 40px;
+  }
+}

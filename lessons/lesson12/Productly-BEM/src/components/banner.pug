@@ -1,0 +1,11 @@
+mixin banner()
+  .c-banner   
+    .container.c-banner__wrapper 
+      .c-banner__block
+        h1.c-banner__title The Design Thinking superpowers
+        .c-banner__description Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
+        .c-banner__box 
+          +button({text: 'Get started', class: 'e-button--start'})
+          +link({text: 'Watch the Video', class: 'e-link--play'})
+      .c-banner__image-box
+        img.c-banner__image(src='./assets/images/svg/banner.svg' alt='Image')

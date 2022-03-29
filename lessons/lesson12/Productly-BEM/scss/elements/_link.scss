@@ -1,0 +1,22 @@
+.e-link {
+  display: inline-block;
+  color: $c-pine-tree;
+  font-size: em(14);
+  &--active {
+    font-weight: 600;
+  }
+  &--play {
+    position: relative;
+    padding-left: 30px;
+    font-size: em(16);
+    color: $c-gamboge;
+    font-weight: 600;
+    &::before {
+      content: url(./assets/images/icons/play.svg);
+      transform: translateY(50%);
+      position: absolute;
+      left: 5px;
+      top: -50%;
+    }
+  }
+}

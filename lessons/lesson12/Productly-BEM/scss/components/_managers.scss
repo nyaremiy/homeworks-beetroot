@@ -1,0 +1,25 @@
+.c-managers {
+  margin-top: 100px;
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  &__text-block {
+    color: $c-olive-drab-camouflage;
+    font-size: em(16);
+    font-weight: 500;
+    max-width: 470px;
+  }
+  &__title {
+    color: $c-pine-tree;
+    font-size: em(36);
+    font-weight: 700;
+  }
+  &__description {
+    margin-top: 15px;
+  }
+  &__image-block {
+    max-width: 535px;
+  }
+}

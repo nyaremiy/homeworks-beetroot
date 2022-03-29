@@ -1,0 +1,6 @@
+mixin form()
+  form.c-form(action="#" method='get')
+    .c-form__input 
+      +input({name: 'Email', type: 'email'})(placeholder= 'Enter your phone Number', required)
+    .c-form__button 
+      +button({type: 'submit', text: 'Sign up Now', class: 'e-button--form'})

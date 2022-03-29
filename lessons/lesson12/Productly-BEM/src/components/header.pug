@@ -1,0 +1,11 @@
+mixin  header()
+
+  header.c-header 
+    .container.c-header__wrapper
+      +logo()
+      .c-header__block
+        .c-header__nav
+          +navigation({'Home': './../../../../../index.html','Product': '','Customers': '', 'Pricng': '', 'Resources' : ''})(activeLine= true) 
+        .c-header__buttons-box 
+          +button({text: 'Sing In', class: 'e-button--transparent'})
+          +button({text: 'Sing Up'})
