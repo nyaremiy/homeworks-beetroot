@@ -1,0 +1,13 @@
+.c-box-forms {
+  &__wrapper {
+    @include flexLine();
+    padding-top: 200px;
+    width: 100%;
+    @include media("<=desktop") {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 200px;
+    }
+  }
+}

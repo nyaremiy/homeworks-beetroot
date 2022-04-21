@@ -1,0 +1,14 @@
+.c-footer {
+  background-color: $c-white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  &__wrapper {
+    padding: 20px 0;
+  }
+  &__desc {
+    text-align: center;
+    font-weight: 600;
+  }
+}

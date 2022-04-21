@@ -1,0 +1,12 @@
+.e-select {
+  border: 1px solid $c-platinum;
+  padding: 0 15px 0 10px;
+  border-radius: 6px;
+  appearance: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  &:focus {
+    outline: 1px solid $c-azure;
+  }
+}

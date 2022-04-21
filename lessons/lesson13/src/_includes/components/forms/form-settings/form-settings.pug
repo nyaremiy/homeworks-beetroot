@@ -1,0 +1,45 @@
+mixin f-settings()
+  form.c-form.c-form--settings(method="get" action="#")
+    .c-form__wrapper
+      .c-form__title.c-form__title--settings Profile
+      .c-form__block.c-form__block--file
+        .c-form__photo-box.h-right-m
+          img.c-card__photo(src="./assets/img/photo.png", alt="Photo")
+        .c-form__photo-settings 
+          .c-form__photo-block 
+            label.c-form__label.c-form__label--file.h-right-m
+              span.c-form__download-text Upload your photo
+              +input('file')(class="e-input--file")
+              svg.icon.icon-photo-camera
+                use(xlink:href='#icon-photo-camera')
+            label.c-form__label
+              .c-form__delete-photo
+                svg.icon.icon-trash
+                  use(xlink:href='#icon-trash')
+          .c-form__explanation.c-form__explanation--file Up to 1 MB (300x300 px)
+      .c-form__block
+        label.c-form__label.h-right-m
+          .c-form__description Name
+          +input('text')(name="name")
+        label.c-form__label
+          .c-form__description Email
+          +input('email')(name="email")
+      .c-form__block
+        label.c-form__label.h-right-m
+          .c-form__description Country
+          .c-form__select-box
+            +select(['Select','Ukraine','Poland','USA','China'])(name="country")
+            svg.icon.icon-select
+              use(xlink:href='#icon-select')
+        label.c-form__label
+          .c-form__description City
+          +input('text')(name="city")
+      .c-form__block
+        label.c-form__label.h-right-m
+          .c-form__description Zip Code
+          +input('number')(name="zipCode")
+        label.c-form__label
+          .c-form__description Phone Number
+          +input('tel')(name="phoneNumber")
+      .c-form__block
+        +button('submit', 'e-button--minimal', 'Save')

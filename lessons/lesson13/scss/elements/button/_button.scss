@@ -1,0 +1,12 @@
+.e-button {
+  background-color: $c-oxford-blue;
+  border-style: none;
+  border-radius: 6px;
+  color: $c-white;
+  padding: 0 10px;
+  height: 40px;
+  width: 100%;
+  &--minimal {
+    max-width: 150px;
+  }
+}

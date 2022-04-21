@@ -1,0 +1,17 @@
+.e-link {
+  color: $c-azure;
+  &--bold {
+    font-weight: 600;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &--navigation {
+    color: $c-eerie-black;
+    font-size: 20px;
+    &:hover {
+      color: $c-sweet-brown;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mixin select(optionValue)
+  select.e-select&attributes(attributes)
+    each val in optionValue
+      if(val === 'Select') 
+        option(disabled selected hidden)= val 
+      else  
+        option(value= val)= val

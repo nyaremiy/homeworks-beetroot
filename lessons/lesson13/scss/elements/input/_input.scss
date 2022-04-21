@@ -1,0 +1,26 @@
+.e-input {
+  border: 1px solid $c-platinum;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 0 10px;
+  height: 40px;
+  width: 100%;
+  &:focus {
+    outline: 1px solid $c-azure;
+  }
+  &::placeholder {
+    color: $c-silver;
+  }
+  &--radio {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    display: none;
+    &:checked ~ .c-form__radio{
+      background-color: $c-azure;
+    }
+  }
+  &--file {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.c-header {
+  font-family: 'Akshar', sans-serif;
+  background-color: $c-white;
+  @include fixedTop();
+  position: fixed;
+  z-index: 5;
+  box-shadow: $bs-normal;
+  &__wrapper {
+    padding: 25px 0;
+  }
+}
