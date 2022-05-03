@@ -1,0 +1,26 @@
+.c-services {
+  margin-top: 125px;
+  &__wrapper {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  &__subtitle {
+    color: $c-shadow-blue;
+  }
+  &__title {
+    font-family: 'Nunito Sans', sans-serif;
+    color: $c-yankees-blue;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  &__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 35px;
+    grid-gap: 20px;
+    display: grid;
+    @include media('<=desktop') {
+      grid-template-columns: 1fr;
+    }
+  }
+}

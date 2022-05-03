@@ -1,0 +1,6 @@
+mixin social-link(nameHref,nameIcon)
+  .c-social-link 
+    .c-social-link__block
+      a.e-link.e-link--block
+        svg.icon(class= nameIcon href= nameHref || '#')
+          use(xlink:href='#' + nameIcon)

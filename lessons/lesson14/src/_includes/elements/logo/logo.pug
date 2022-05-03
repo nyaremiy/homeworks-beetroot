@@ -1,0 +1,6 @@
+mixin logo(iconName)
+  .c-logo
+    .c-logo__icon 
+      svg.icon(class= iconName)
+        use(xlink:href='#' + iconName)
+    .c-logo__text&attributes(attributes) Freehand

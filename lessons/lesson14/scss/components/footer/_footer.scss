@@ -1,0 +1,18 @@
+.c-footer {
+  background-color: $c-yankees-blue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include media('<=desktop') {
+    position: static;
+  }
+  &__wrapper {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  &__links {
+    margin-top: 40px;
+    display: flex;
+  }
+}

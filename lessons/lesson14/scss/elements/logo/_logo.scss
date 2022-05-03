@@ -1,0 +1,18 @@
+.c-logo {
+  font-family: 'Quicksand', sans-serif;
+  align-items: center;
+  font-size: 36px;
+  display: flex;
+  &__icon {
+    align-items: center;
+    margin-right: 15px;
+    font-size: 26px;
+    display: flex;
+  }
+  &__text {
+    color: $c-yankees-blue;
+    &--white {
+      color: $c-white;
+    }
+  }
+}

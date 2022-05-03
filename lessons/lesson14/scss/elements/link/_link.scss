@@ -1,0 +1,20 @@
+.e-link {
+  font-family: 'Quicksand', sans-serif;
+  color: $c-yankees-blue;
+  font-size: 26px;
+  &:hover {
+    text-decoration: underline;
+    color: $c-spanish-green;
+  }
+  &--block {
+    color: $c-smoky-black;
+    align-items: center;
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+  }
+  &--card {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,9 @@
+mixin card(iconName,cardTitle,cardText,cardDesc)
+  section.c-card 
+    .c-card__icon-box
+      svg.icon(class= iconName || '')
+        use(xlink:href='#' + iconName) 
+    h3.c-card__title= cardTitle
+    .c-card__text= cardText 
+    .c-card__desc
+      +link('', cardDesc)(class= 'e-link--card')

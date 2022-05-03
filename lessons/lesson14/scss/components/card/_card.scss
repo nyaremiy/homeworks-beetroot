@@ -1,0 +1,31 @@
+.c-card {
+  border: 1px solid $c-lavender;
+  color: $c-yankees-blue;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  &:hover {
+    border-color: $c-medium-sea-green;
+    cursor: pointer;
+  }
+  &__icon-box {
+    border: 1px solid $c-lavender;
+    align-items: center;
+    border-radius: 16px;
+    width: fit-content;
+    font-size: 38px;
+    padding: 12px;
+    display: flex;
+  }
+  &__title {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  &__text {
+    line-height: 28px;
+    margin-top: 16px;
+  }
+  &__desc {
+    margin-top: 30px;
+  }
+}

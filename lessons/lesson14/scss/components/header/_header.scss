@@ -1,0 +1,13 @@
+.c-header {
+  background-color: $c-white;
+  @include fixedTop();
+  z-index: 2;
+  &__wrapper {
+    border-bottom: 1px solid $c-bright-gray;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    align-items: center;
+    padding-top: 40px;
+    display: flex;
+  }
+}
