@@ -1,0 +1,144 @@
+:root {
+  --c-black-purple: #412163;
+  --c-purple: #281641;
+  --c-black: #040104;
+  --c-black-blue: #090613;
+  --c-white: #fff;
+  --c-red: #ff0000;
+  --c-yellow: #ffff00;
+  --c-green: #00d800;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.listSongs {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 0 40px 0;
+}
+.listSongs__title {
+  margin-bottom: 20px;
+}
+.buttonModaleScreen {
+  text-align: center;
+}
+.button {
+  background-color: var(--c-purple);
+  color: var(--c-white);
+  border-radius: 10px;
+  border-style: none;
+  width: fit-content;
+  cursor: pointer;
+  padding: 0 40px;
+  font-size: 20px;
+  height: 60px;
+}
+.modaleWindowJS {
+  background-color: rgba(27, 27, 27, 0.7);
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.form {
+  background-color: var(--c-black-purple);
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--c-white);
+  color: var(--c-white);
+  border-radius: 35px;
+  width: fit-content;
+  position: relative;
+  display: block;
+  padding: 0 30px;
+  left: 50%;
+  top: 50%;
+}
+.form__label {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+.form__desc {
+  margin-right: 15px;
+  font-size: 24px;
+}
+.form__input {
+  border-radius: 5px;
+  border-style: none;
+  padding: 0 10px;
+  font-size: 18px;
+  outline: none;
+  height: 45px;
+}
+.form__button {
+  text-align: center;
+  margin: 10px 0;
+}
+.button--form {
+  border: 1px solid var(--c-white);
+  font-size: 16px;
+  height: 40px;
+}
+.button--close {
+  border: 1px solid var(--c-white);
+  font-size: 14px;
+  padding: 0 10px;
+  height: 35px;
+}
+.form__button--close {
+  text-align: right;
+}
+.show {
+  z-index: 999;
+  opacity: 1;
+}
+.red-border {
+  border: 2px solid red;
+}
+.traffic-lights__block {
+  background-color: var(--c-black-blue);
+  border-radius: 10px;
+  margin: 50px auto;
+  height: 300px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.traffic-lights__circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.traffic-lights__circle--red {
+  background-color: var(--c-red);
+  opacity: 0.3;
+}
+.traffic-lights__circle--yellow {
+  background-color: var(--c-yellow);
+  opacity: 0.3;
+}
+.traffic-lights__circle--green {
+  background-color: var(--c-green);
+  opacity: 0.3;
+}
+.button--traffic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.color-active {
+  opacity: 1;
+}

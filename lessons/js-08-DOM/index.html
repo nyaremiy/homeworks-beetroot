@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Список -->
+      <div class="listSongs">
+        <h2 class="listSongs__title">List Songs</h2>
+        <ol id="listSongs"></ol>
+      </div>
+      <div class="buttonModaleScreen">
+        <!-- Кнопка для модального вікна-->
+        <button type="button" class="button js-modwindow">
+          <span>Модальне вікно</span>
+        </button>
+      </div>
+      <!-- Світофор -->
+      <div class="traffic-lights">
+        <div class="traffic-lights__block">
+          <div class="traffic-lights__circle traffic-lights__circle--red color-active" id="js-redTraffic"></div>
+          <div
+            class="traffic-lights__circle traffic-lights__circle--yellow " id="js-yellowTraffic"
+          ></div>
+          <div
+            class="traffic-lights__circle traffic-lights__circle--green" id="js-greenTraffic"
+          ></div>
+        </div>
+        <button type="button" class="button button--traffic" id="js-tarffic">
+          <span>Наступний колір</span>
+        </button>
+      </div>
+      </div>
+      <!-- Модальне вікно з формою-->
+      <div class="modaleWindowJS">
+        <form method="post" class="form" id="js-form">
+          <div class="form__button form__button--close">
+            <button type="button" class="button button--close js-modwindow">
+              <span>X</span>
+            </button>
+          </div>
+          <label class="form__label">
+            <div class="form__desc">Login:</div>
+            <input
+              type="text"
+              name="login"
+              class="form__input"
+              id="js-inputLogin"
+            />
+          </label>
+          <label class="form__label">
+            <div class="form__desc">Password:</div>
+            <input
+              type="password"
+              name="password"
+              class="form__input"
+              id="js-inputPass"
+            />
+          </label>
+          <div class="form__button">
+            <button
+              type="submit"
+              class="button button--form"
+              id="js-submitForm"
+            >
+              <span>Sing In</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
