@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+}
+.app {
+  padding: 0 40px;
+}
+#js-textarea {
+  margin-top: 20px;
+  font-size: 16px;
+}
+#js-text {
+  margin-top: 20px;
+}
+.info-text {
+  font-weight: 700;
+  margin-top: 10px;
+}
+table {
+  margin-top: 20px;
+}
+td,
+th {
+  border: 1px solid #602020;
+  text-align: center;
+  padding: 15px;
+}
+th {
+  background-color: #040104;
+  cursor: pointer;
+  color: #fff;
+}
+.task-three {
+  margin-top: 30px;
+  height: 300px;
+}
+.box-text {
+  transition: all 0.2s linear;
+  border: 5px solid #602020;
+  margin-top: 20px;
+  width: 500px;
+  padding: 40px;
+}
